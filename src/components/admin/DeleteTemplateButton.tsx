@@ -14,7 +14,7 @@ export function DeleteTemplateButton({ id }: { id: string }) {
       <input type="hidden" name="id" value={id} />
       <button
         type="submit"
-        className="rounded border border-red-700/60 px-2 py-1 text-xs text-red-300 transition hover:bg-red-900/40"
+        className="cursor-pointer rounded border border-red-700/60 px-2 py-1 text-xs text-red-300 transition hover:bg-red-900/40"
       >
         삭제
       </button>
