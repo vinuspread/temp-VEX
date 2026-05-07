@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import { AdminShell } from "@/components/admin/AdminShell";
-import { deleteTemplateAction } from "@/app/admin/_actions/templates";
+import { DeleteTemplateButton } from "@/components/admin/DeleteTemplateButton";
 import { requireAdminUser } from "@/lib/admin/auth";
 import { listTemplateTypes, listTemplates } from "@/lib/admin/store";
 
@@ -15,7 +15,7 @@ export default async function AdminTemplatesPage({
 
   const params = await searchParams;
   const q = params.q?.trim() ?? "";
-  const templates = await listTemplates(true);
+  const templates = await listTemplates();
   const templateTypes = await listTemplateTypes();
   const typeMap = new Map(templateTypes.map((type) => [type.id, type.label]));
   const filteredTemplates = q
@@ -86,7 +86,7 @@ export default async function AdminTemplatesPage({
           </thead>
           <tbody className="divide-y divide-zinc-800 bg-zinc-950/40">
             {filteredTemplates.map((template) => (
-              <tr key={template.id} className={template.deletedAt ? "opacity-50" : ""}>
+              <tr key={template.id}>
                 <td className="px-3 py-3 text-zinc-100">
                   <a
                     href={template.previewPath}
@@ -119,19 +119,7 @@ export default async function AdminTemplatesPage({
                   </Link>
                 </td>
                 <td className="px-3 py-3">
-                  {template.deletedAt ? (
-                    <span className="text-xs text-zinc-500">삭제됨</span>
-                  ) : (
-                    <form action={deleteTemplateAction}>
-                      <input type="hidden" name="id" value={template.id} />
-                      <button
-                        type="submit"
-                        className="rounded border border-red-700/60 px-2 py-1 text-xs text-red-300 transition hover:bg-red-900/40"
-                      >
-                        삭제
-                      </button>
-                    </form>
-                  )}
+                  <DeleteTemplateButton id={template.id} />
                 </td>
               </tr>
             ))}
