@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { AdminShell } from "@/components/admin/AdminShell";
 import { updateTemplateSortModeAction } from "@/app/admin/_actions/templates";
 import { createBackupAction, restoreBackupAction } from "@/app/admin/_actions/backups";
@@ -54,6 +55,19 @@ export default async function AdminDashboardPage() {
             적용
           </button>
         </form>
+      </section>
+
+      <section className="rounded-xl border border-zinc-800 bg-zinc-950/60 p-4 flex items-center justify-between">
+        <div>
+          <h2 className="text-sm font-semibold text-white">사이트 설정</h2>
+          <p className="mt-1 text-xs text-zinc-400">메인 배경 이미지 등 전체 설정을 관리합니다.</p>
+        </div>
+        <Link
+          href="/admin/settings"
+          className="rounded-lg border border-zinc-700 bg-white px-4 py-2 text-sm font-medium text-zinc-900 transition hover:bg-zinc-200"
+        >
+          설정 열기
+        </Link>
       </section>
 
       <section className="grid gap-6 lg:grid-cols-2">

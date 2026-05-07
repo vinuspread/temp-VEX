@@ -1,5 +1,5 @@
 {
-  "buildCommand": "node scripts/sync-templates.js && next build",
+  "buildCommand": "next build",
   "outputDirectory": ".next",
   "framework": "nextjs",
   "crons": [

@@ -1,10 +1,15 @@
+"use client";
+
+import { useActionState } from "react";
+
 import type { TemplateItem, TemplateType } from "@/lib/admin/types";
 import type { TemplateRuntimeOption } from "@/lib/admin/runtime-routes";
+import type { ActionState } from "@/app/admin/_actions/templates";
 
 import { ThumbnailDropzone } from "@/components/admin/ThumbnailDropzone";
 
 interface TemplateFormProps {
-  action: (formData: FormData) => Promise<void>;
+  action: (prevState: ActionState, formData: FormData) => Promise<ActionState>;
   templateTypes: TemplateType[];
   runtimeOptions: TemplateRuntimeOption[];
   initial?: TemplateItem;
@@ -16,10 +21,17 @@ function textAreaJoin(values: string[]): string {
 
 export function TemplateForm({ action, templateTypes, runtimeOptions, initial }: TemplateFormProps) {
   const initialRoute = initial?.previewPath?.replace(/^\//, "") ?? runtimeOptions[0]?.runtimeRoute ?? "";
+  const [state, formAction] = useActionState(action, null);
 
   return (
-    <form action={action} className="space-y-6">
+    <form action={formAction} className="space-y-6">
       {initial ? <input type="hidden" name="id" value={initial.id} /> : null}
+
+      {state?.error ? (
+        <div className="rounded-lg border border-red-500/40 bg-red-950/40 px-4 py-3 text-sm text-red-300">
+          {state.error}
+        </div>
+      ) : null}
 
       <div className="grid gap-4 md:grid-cols-2">
         <label className="space-y-2 text-sm">

@@ -41,15 +41,17 @@ export async function updateTemplateSortModeAction(formData: FormData) {
   redirect("/admin");
 }
 
-export async function createTemplateAction(formData: FormData) {
+export type ActionState = { error: string } | null;
+
+export async function createTemplateAction(_prevState: ActionState, formData: FormData): Promise<ActionState> {
   const input = parseTemplateInput(formData);
   if (!(await isTemplateRuntimeRoute(input.runtimeRoute))) {
-    throw new Error("실행 라우트를 다시 선택해 주세요.");
+    return { error: "실행 라우트를 다시 선택해 주세요." };
   }
 
   const files = getThumbnailFiles(formData);
   if (files.length < 3) {
-    throw new Error("기본 썸네일은 최소 3장 필요합니다.");
+    return { error: "기본 썸네일은 최소 3장 필요합니다." };
   }
 
   const thumbnailUrls = await uploadThumbnailFiles(files, input.name);
@@ -64,15 +66,15 @@ export async function createTemplateAction(formData: FormData) {
   redirect("/admin/templates");
 }
 
-export async function updateTemplateAction(formData: FormData) {
+export async function updateTemplateAction(_prevState: ActionState, formData: FormData): Promise<ActionState> {
   const id = String(formData.get("id") ?? "");
   if (!id) {
-    throw new Error("템플릿 ID가 필요합니다.");
+    return { error: "템플릿 ID가 필요합니다." };
   }
 
   const input = parseTemplateInput(formData);
   if (!(await isTemplateRuntimeRoute(input.runtimeRoute))) {
-    throw new Error("실행 라우트를 다시 선택해 주세요.");
+    return { error: "실행 라우트를 다시 선택해 주세요." };
   }
 
   const files = getThumbnailFiles(formData);
@@ -80,14 +82,14 @@ export async function updateTemplateAction(formData: FormData) {
 
   if (files.length > 0) {
     if (files.length < 3) {
-      throw new Error("썸네일을 교체할 때는 최소 3장을 업로드해 주세요.");
+      return { error: "썸네일을 교체할 때는 최소 3장을 업로드해 주세요." };
     }
     const thumbnailUrls = await uploadThumbnailFiles(files, input.name);
     thumbnailRaw = thumbnailUrls.join("\n");
   }
 
   if (!thumbnailRaw.trim()) {
-    throw new Error("기본 썸네일은 최소 3장 필요합니다.");
+    return { error: "기본 썸네일은 최소 3장 필요합니다." };
   }
 
   await updateTemplate(id, { ...input, thumbnailRaw });

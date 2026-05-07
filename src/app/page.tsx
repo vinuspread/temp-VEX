@@ -1,66 +1,109 @@
 import Link from "next/link";
 
-import { listPublicTemplates, listTemplateTypes } from "@/lib/admin/store";
+import { listPublicTemplates, listTemplateTypes, getHubBgImageUrl } from "@/lib/admin/store";
+import { ThumbnailSlider } from "@/components/ThumbnailSlider";
+
+function getLangBadge(previewPath: string): "EN" | "KR" | null {
+  if (/_en(\/|$)/i.test(previewPath)) return "EN";
+  if (/_kr(\/|$)/i.test(previewPath)) return "KR";
+  return null;
+}
 
 export default async function HubPage() {
-  const templates = await listPublicTemplates();
-  const templateTypes = await listTemplateTypes();
+  const [templates, templateTypes, bgImageUrl] = await Promise.all([
+    listPublicTemplates(),
+    listTemplateTypes(),
+    getHubBgImageUrl(),
+  ]);
   const typeMap = new Map(templateTypes.map((type) => [type.id, type.label]));
 
   return (
-    <main className="min-h-screen bg-[#050505] p-6 font-sans text-[#F0F0F0] selection:bg-white selection:text-black md:p-12 lg:p-24">
-      <div className="mx-auto max-w-[1400px]">
-        <header className="mb-20 flex flex-col gap-4 border-b border-white/5 pb-10 md:flex-row md:items-end md:justify-between">
-          <div>
-            <h1 className="mb-2 text-3xl font-black tracking-tighter lowercase md:text-4xl">vinuspread</h1>
-            <p className="text-[9px] uppercase tracking-[0.4em] text-white/30">Archive v2.1.0 / Production Hub</p>
-          </div>
-          <Link
-            href="/admin"
-            className="rounded border border-white/20 px-3 py-2 text-[10px] uppercase tracking-[0.25em] text-white/70 transition hover:border-white/60 hover:text-white"
-          >
-            Admin
-          </Link>
-        </header>
+    <main className="relative min-h-screen bg-[#050505] font-sans text-[#F0F0F0] selection:bg-white selection:text-black">
 
-        <section className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {templates.map((template, index) => (
-            <article key={template.id} className="relative overflow-hidden rounded-[2px] border border-white/10 bg-white/[0.03] p-5">
-              <div className="mb-4 flex items-start justify-between">
-                <span className="font-mono text-[10px] text-white/30">{String(index + 1).padStart(2, "0")}</span>
-                <span className="rounded border border-white/15 px-2 py-1 text-[10px] uppercase tracking-[0.15em] text-white/60">
-                  {typeMap.get(template.templateTypeId) ?? "미분류"}
-                </span>
-              </div>
-              <h2 className="text-2xl font-serif tracking-tight">{template.name}</h2>
-              <p className="mt-2 text-[11px] uppercase tracking-[0.22em] text-white/40">{template.summary}</p>
+      {/* Background image with gradient */}
+      <div className="fixed inset-0 z-0">
+        <img
+          src={bgImageUrl}
+          alt=""
+          className="h-full w-full object-cover opacity-20"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/60 to-black" style={{ background: "linear-gradient(to bottom, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.5) 40%, rgba(5,5,5,1) 65%)" }} />
+      </div>
 
-              <div className="mt-5 flex gap-2">
-                <Link
-                  href={template.previewPath}
-                  className="rounded border border-white/30 px-3 py-2 text-xs text-white transition hover:border-white"
-                >
-                  미리보기
-                </Link>
-                <Link
-                  href={`/${template.slug}/apply`}
-                  className={`rounded border px-3 py-2 text-xs transition ${
-                    template.applicationEnabled
-                      ? "border-[#ED008C]/60 text-[#ED008C] hover:border-[#ED008C]"
-                      : "cursor-not-allowed border-white/15 text-white/30"
-                  }`}
-                  aria-disabled={!template.applicationEnabled}
-                >
-                  신청하기
-                </Link>
-              </div>
-            </article>
-          ))}
-        </section>
+      {/* Content */}
+      <div className="relative z-10">
+        <div className="mx-auto max-w-[1440px] px-6 md:px-12">
 
-        <footer className="mt-20 border-t border-white/5 pt-8 text-[10px] uppercase tracking-[0.3em] text-white/30">
-          &copy; 2026 vinuspread. Built for Excellence.
-        </footer>
+          <header className="flex items-end justify-between pb-10 pt-16 md:pt-20">
+            <div>
+              <h1 className="mb-2 text-3xl font-black tracking-tighter lowercase md:text-4xl">vinuspread</h1>
+              <p className="text-[9px] uppercase tracking-[0.4em] text-white/30">Archive v2.1.0 / Production Hub</p>
+            </div>
+            <Link
+              href="/admin"
+              className="rounded border border-white/20 px-3 py-2 text-[10px] uppercase tracking-[0.25em] text-white/70 transition hover:border-white/60 hover:text-white"
+            >
+              Admin
+            </Link>
+          </header>
+
+          {/* Hero spacer — lets the image breathe above the cards */}
+          <div className="h-[35vh]" />
+
+          <section className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {templates.map((template, index) => (
+              <article
+                key={template.id}
+                className="group relative overflow-hidden rounded-sm bg-white/[0.04] backdrop-blur-sm"
+              >
+                {/* Thumbnail slider */}
+                <ThumbnailSlider urls={template.thumbnailUrls} alt={template.name} />
+
+                <div className="p-5">
+                  <div className="mb-3 flex items-start justify-between">
+                    <span className="font-mono text-[10px] text-white/30">{String(index + 1).padStart(2, "0")}</span>
+                    <div className="flex items-center gap-1.5">
+                      <span className="rounded border border-white/15 px-2 py-0.5 text-[11px] text-white/50">
+                        {typeMap.get(template.templateTypeId) ?? "미분류"}
+                      </span>
+                      {getLangBadge(template.previewPath) && (
+                        <span className="rounded border border-sky-500/50 px-1.5 py-0.5 text-[10px] font-bold text-sky-400">
+                          {getLangBadge(template.previewPath)}
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                  <h2 className="text-xl font-black tracking-tight">{template.name}</h2>
+                  <p className="mt-1.5 text-sm text-white/60 line-clamp-2">{template.summary}</p>
+
+                  <div className="mt-4 flex gap-2">
+                    <Link
+                      href={template.previewPath}
+                      className="rounded border border-white/30 px-3 py-1.5 text-sm text-white transition hover:border-white"
+                    >
+                      미리보기
+                    </Link>
+                    <Link
+                      href={`/${template.slug}/apply`}
+                      className={`rounded border px-3 py-1.5 text-sm transition ${
+                        template.applicationEnabled
+                          ? "border-[#ED008C]/60 text-[#ED008C] hover:border-[#ED008C]"
+                          : "cursor-not-allowed border-white/15 text-white/30"
+                      }`}
+                      aria-disabled={!template.applicationEnabled}
+                    >
+                      신청하기
+                    </Link>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </section>
+
+          <footer className="mt-20 border-t border-white/5 pb-10 pt-8 text-[10px] uppercase tracking-[0.3em] text-white/30">
+            &copy; 2026 vinuspread. Built for Excellence.
+          </footer>
+        </div>
       </div>
     </main>
   );

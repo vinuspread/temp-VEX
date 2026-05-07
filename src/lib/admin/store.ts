@@ -43,46 +43,24 @@ const defaultTypeSeed = [
 ] as const;
 
 const hubTemplateSeed = [
-  { name: "Fashion", slug: "fashion", summary: "Minimalist luxury boutique.", description: "패션 브랜드 홍보/쇼핑몰형 템플릿", previewPath: "/fashion", jsType: "REACT", typeCode: "shopping" },
-  { name: "Jewelry", slug: "jewelry", summary: "High-end jewelry showcase.", description: "주얼리 쇼케이스 템플릿", previewPath: "/jewelry", jsType: "NEXT", typeCode: "promotional" },
-  { name: "Exhibition", slug: "exhibition", summary: "Museum digital platform.", description: "전시/뮤지엄 플랫폼 템플릿", previewPath: "/exhibition", jsType: "NEXT", typeCode: "business" },
-  { name: "Furniture", slug: "furniture", summary: "Modern interior marketplace.", description: "가구 쇼핑형 템플릿", previewPath: "/furniture", jsType: "NEXT", typeCode: "shopping" },
-  { name: "Sneakers", slug: "sneaker", summary: "Urban street-style releases.", description: "스니커즈 커머스 템플릿", previewPath: "/sneaker", jsType: "NEXT", typeCode: "shopping" },
-  { name: "Studio", slug: "studio", summary: "Creative agency portfolio.", description: "크리에이티브 스튜디오 템플릿", previewPath: "/studio", jsType: "NEXT", typeCode: "business" },
-  { name: "Portfolio", slug: "portfolio", summary: "Personal branding platform.", description: "개인 브랜딩 템플릿", previewPath: "/portfolio", jsType: "NEXT", typeCode: "personal" },
-  { name: "Airline", slug: "airline", summary: "Premium airline booking UX.", description: "항공 예약형 템플릿", previewPath: "/airline", jsType: "NEXT", typeCode: "business" },
+  { name: "Airline", slug: "airline", summary: "Premium airline booking experience.", description: "항공 예약형 템플릿", previewPath: "/templates/static/airline/", jsType: "NEXT", typeCode: "business" },
+  { name: "Car", slug: "car", summary: "Automotive brand showcase.", description: "자동차 브랜드 쇼케이스 템플릿", previewPath: "/templates/static/car/", jsType: "NEXT", typeCode: "promotional" },
+  { name: "Cosmetic", slug: "cosmetic", summary: "Beauty & skincare brand site.", description: "뷰티/스킨케어 브랜드 템플릿", previewPath: "/templates/static/cosmetic/", jsType: "NEXT", typeCode: "shopping" },
+  { name: "IR", slug: "ir", summary: "Investor relations platform.", description: "기업 IR 페이지 템플릿", previewPath: "/templates/static/ir/", jsType: "NEXT", typeCode: "business" },
+  { name: "Magazine", slug: "magazine", summary: "Digital magazine layout.", description: "디지털 매거진 템플릿", previewPath: "/templates/static/magazine/", jsType: "NEXT", typeCode: "promotional" },
+  { name: "Newspaper", slug: "newspaper", summary: "Online newspaper front page.", description: "온라인 신문 템플릿", previewPath: "/templates/static/newspaper/", jsType: "NEXT", typeCode: "promotional" },
 ] as const;
 
-const legacyDefaultThumbnails = ["/images/hero_bg.png", "/images/hero_main.png", "/images/project-1.jpg"];
+const defaultThumbnails = ["/images/hero_bg.png", "/images/hero_main.png", "/images/project-1.jpg"];
 
-function getSeedThumbnailUrls(slug: string): string[] {
-  switch (slug) {
-    case "fashion":
-      return ["/images/fashion-thumb.png", "/images/hero_main.png", "/images/lifestyle_gallery.png"];
-    case "jewelry":
-      return ["/images/jewelry-thumb.png", "/images/jewelry_hero_main.png", "/images/jewelry_ring.png"];
-    case "exhibition":
-      return ["/images/vatican-thumb.png", "/images/vatican_architecture.png", "/images/vatican_hallway.png"];
-    case "furniture":
-      return ["/furniture/lifestyle_narrative.png", "/images/project-1.jpg", "/images/project-2.jpg"];
-    case "sneaker":
-      return ["/images/gundam-unicorn.jpg", "/images/gundam-nu.jpg", "/images/gundam-sazabi.jpg"];
-    case "studio":
-      return ["/images/project-1.jpg", "/images/project-2.jpg", "/images/project-3.jpg"];
-    case "portfolio":
-      return ["/images/project-2.jpg", "/images/project-3.jpg", "/images/project-1.jpg"];
-    case "airline":
-      return ["/images/hero-bg.jpg", "/images/hero_custom.png", "/images/hero_custom_2.jpg"];
-    default:
-      return legacyDefaultThumbnails;
-  }
+function getSeedThumbnailUrls(_slug: string): string[] {
+  return defaultThumbnails;
 }
 
 function hasLegacyThumbnailSet(template: TemplateItem): boolean {
   return (
-    template.coverThumbnailUrl === legacyDefaultThumbnails[0] ||
-    (template.thumbnailUrls.length === legacyDefaultThumbnails.length &&
-      template.thumbnailUrls.every((item, index) => item === legacyDefaultThumbnails[index]))
+    template.thumbnailUrls.length === defaultThumbnails.length &&
+    template.thumbnailUrls.every((item, index) => item === defaultThumbnails[index])
   );
 }
 
@@ -136,6 +114,7 @@ function createInitialStore(): AdminMemoryStore {
   return {
     state: {
       templateListSortMode: "LATEST",
+      hubBgImageUrl: "https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=2000",
       templateTypes,
       templates,
       requests: [],
@@ -190,6 +169,7 @@ async function hydrateStoreFromSupabase(): Promise<void> {
   if (isAdminMemoryStore(data?.payload)) {
     const hydrated = cloneState(data.payload);
     hydrated.state.templateListSortMode ??= "LATEST";
+    hydrated.state.hubBgImageUrl ??= "https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=2000";
     let migrated = false;
     hydrated.state.templates = hydrated.state.templates.map((template) => {
       if (!hasLegacyThumbnailSet(template)) {
@@ -250,6 +230,17 @@ export async function getTemplateListSortMode(): Promise<SortMode> {
 export async function updateTemplateListSortMode(mode: SortMode): Promise<void> {
   await withMutation((state) => {
     state.templateListSortMode = mode;
+  });
+}
+
+export async function getHubBgImageUrl(): Promise<string> {
+  await hydrateStoreFromSupabase();
+  return getStore().state.hubBgImageUrl ?? "https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=2000";
+}
+
+export async function updateHubBgImageUrl(url: string): Promise<void> {
+  await withMutation((state) => {
+    state.hubBgImageUrl = url;
   });
 }
 

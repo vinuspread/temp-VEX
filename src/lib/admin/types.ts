@@ -64,6 +64,7 @@ export interface BackupSnapshot {
 
 export interface AdminStoreState {
   templateListSortMode: SortMode;
+  hubBgImageUrl: string;
   templateTypes: TemplateType[];
   templates: TemplateItem[];
   requests: TemplateRequest[];

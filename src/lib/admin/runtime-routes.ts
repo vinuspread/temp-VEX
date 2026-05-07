@@ -1,7 +1,7 @@
 import { readdir, stat } from "node:fs/promises";
 import path from "node:path";
 
-const TEMPLATES_DIR = path.join(process.cwd(), "templates");
+const STATIC_TEMPLATES_DIR = path.join(process.cwd(), "public", "templates", "static");
 
 export interface TemplateRuntimeOption {
   key: string;
@@ -11,21 +11,21 @@ export interface TemplateRuntimeOption {
 }
 
 async function scanTemplateRoutes(): Promise<TemplateRuntimeOption[]> {
-  const entries = await readdir(TEMPLATES_DIR);
+  const entries = await readdir(STATIC_TEMPLATES_DIR);
   const results: TemplateRuntimeOption[] = [];
 
   for (const entry of entries) {
     if (entry.startsWith(".")) continue;
 
-    const fullPath = path.join(TEMPLATES_DIR, entry);
+    const fullPath = path.join(STATIC_TEMPLATES_DIR, entry);
     const info = await stat(fullPath);
     if (!info.isDirectory()) continue;
 
     results.push({
       key: entry,
       name: entry.charAt(0).toUpperCase() + entry.slice(1),
-      runtimeRoute: entry,
-      sourcePath: `templates/${entry}`,
+      runtimeRoute: `templates/static/${entry}/index.html`,
+      sourcePath: `public/templates/static/${entry}`,
     });
   }
 
