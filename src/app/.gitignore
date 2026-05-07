@@ -1,0 +1,12 @@
+# Template folders are managed in /templates/ and synced at build time
+*
+!.gitignore
+!_actions
+!\[templateSlug\]
+!admin
+!api
+!auth
+!not-authorized
+!globals.css
+!layout.tsx
+!page.tsx
