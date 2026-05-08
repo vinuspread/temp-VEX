@@ -66,9 +66,10 @@ export function TemplateForm({ action, templateTypes, runtimeOptions, initial }:
           <span className="text-zinc-300">JS 유형</span>
           <select
             name="jsType"
-            defaultValue={initial?.jsType ?? "NEXT"}
+            defaultValue={initial?.jsType ?? "STATIC"}
             className="w-full rounded-lg border border-zinc-700 bg-zinc-950 px-3 py-2 text-zinc-100"
           >
+            <option value="STATIC">Static HTML</option>
             <option value="NEXT">Next.js</option>
             <option value="REACT">React.js</option>
           </select>
@@ -96,11 +97,11 @@ export function TemplateForm({ action, templateTypes, runtimeOptions, initial }:
           >
             {runtimeOptions.map((option) => (
               <option key={option.key || option.runtimeRoute} value={option.runtimeRoute}>
-                {option.name} (/{option.runtimeRoute})
+                {option.name}
               </option>
             ))}
           </select>
-          <p className="text-xs text-zinc-500">template-sources/catalog.json 기준으로 GitHub 소스를 선택/매핑합니다.</p>
+          <p className="text-xs text-zinc-500">public/templates/static/ 에서 자동 스캔된 폴더를 선택합니다.</p>
         </label>
 
       </div>
@@ -128,8 +129,8 @@ export function TemplateForm({ action, templateTypes, runtimeOptions, initial }:
       </label>
 
       <label className="block space-y-2 text-sm">
-        <span className="text-zinc-300">기본 썸네일 3장 이상 (드래그앤드롭 가능)</span>
-        <ThumbnailDropzone name="thumbnailFiles" minimumCount={3} />
+        <span className="text-zinc-300">썸네일 (선택, 드래그앤드롭 가능)</span>
+        <ThumbnailDropzone name="thumbnailFiles" />
         {initial ? <input type="hidden" name="existingThumbnailRaw" value={textAreaJoin(initial.thumbnailUrls)} /> : null}
         {initial?.thumbnailUrls.length ? (
           <div className="grid grid-cols-3 gap-2">

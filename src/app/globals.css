@@ -4,6 +4,16 @@
   --font-sans: var(--font-pretendard), -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
+
+@keyframes tsl-enter-right {
+  from { transform: translateX(105%); }
+  to   { transform: translateX(0); }
+}
+@keyframes tsl-enter-left {
+  from { transform: translateX(-105%); }
+  to   { transform: translateX(0); }
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;

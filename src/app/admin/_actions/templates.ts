@@ -20,13 +20,12 @@ function parseTemplateInput(formData: FormData) {
     summary: String(formData.get("summary") ?? ""),
     description: String(formData.get("description") ?? ""),
     thumbnailRaw: String(formData.get("thumbnailRaw") ?? ""),
-    jsType: String(formData.get("jsType") ?? "NEXT") as TemplateJsType,
+    jsType: String(formData.get("jsType") ?? "STATIC") as TemplateJsType,
     visibility: String(formData.get("visibility") ?? "PUBLIC") as TemplateVisibility,
     applicationEnabled: true,
     templateTypeId: String(formData.get("templateTypeId") ?? ""),
     tagsRaw: String(formData.get("tagsRaw") ?? ""),
     revisionsRaw: String(formData.get("revisionsRaw") ?? ""),
-    subPageCount: 4,
     runtimeRoute: String(formData.get("runtimeRoute") ?? ""),
   };
 }
@@ -50,11 +49,7 @@ export async function createTemplateAction(_prevState: ActionState, formData: Fo
   }
 
   const files = getThumbnailFiles(formData);
-  if (files.length < 3) {
-    return { error: "기본 썸네일은 최소 3장 필요합니다." };
-  }
-
-  const thumbnailUrls = await uploadThumbnailFiles(files, input.name);
+  const thumbnailUrls = files.length > 0 ? await uploadThumbnailFiles(files, input.name) : [];
 
   await createTemplate({
     ...input,
@@ -81,15 +76,8 @@ export async function updateTemplateAction(_prevState: ActionState, formData: Fo
   let thumbnailRaw = String(formData.get("existingThumbnailRaw") ?? "");
 
   if (files.length > 0) {
-    if (files.length < 3) {
-      return { error: "썸네일을 교체할 때는 최소 3장을 업로드해 주세요." };
-    }
     const thumbnailUrls = await uploadThumbnailFiles(files, input.name);
     thumbnailRaw = thumbnailUrls.join("\n");
-  }
-
-  if (!thumbnailRaw.trim()) {
-    return { error: "기본 썸네일은 최소 3장 필요합니다." };
   }
 
   await updateTemplate(id, { ...input, thumbnailRaw });

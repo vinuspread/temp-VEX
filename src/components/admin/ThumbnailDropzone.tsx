@@ -4,20 +4,19 @@ import { useMemo, useRef, useState } from "react";
 
 interface ThumbnailDropzoneProps {
   name: string;
-  minimumCount?: number;
 }
 
-export function ThumbnailDropzone({ name, minimumCount = 3 }: ThumbnailDropzoneProps) {
+export function ThumbnailDropzone({ name }: ThumbnailDropzoneProps) {
   const inputRef = useRef<HTMLInputElement>(null);
   const [isDragging, setIsDragging] = useState(false);
   const [files, setFiles] = useState<File[]>([]);
 
   const helperText = useMemo(() => {
     if (!files.length) {
-      return `이미지 파일을 드래그앤드롭하거나 클릭해서 ${minimumCount}장 이상 선택해 주세요.`;
+      return "이미지 파일을 드래그앤드롭하거나 클릭해서 선택해 주세요.";
     }
     return `${files.length}장 선택됨`;
-  }, [files, minimumCount]);
+  }, [files]);
 
   const assignFiles = (nextFiles: File[]) => {
     const imageFiles = nextFiles.filter((file) => file.type.startsWith("image/"));

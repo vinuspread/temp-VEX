@@ -1,5 +1,5 @@
 export type TemplateVisibility = "PUBLIC" | "PRIVATE";
-export type TemplateJsType = "NEXT" | "REACT";
+export type TemplateJsType = "NEXT" | "REACT" | "STATIC";
 export type SortMode = "LATEST" | "POPULAR";
 
 export type RequestStatus = "RECEIVED" | "REVIEWING" | "DONE" | "ON_HOLD";
@@ -31,7 +31,7 @@ export interface TemplateItem {
   sortOrder: number;
   tags: string[];
   revisions: string[];
-  pageInfo: {
+  pageInfo?: {
     hasMainPage: boolean;
     subPageCount: number;
   };

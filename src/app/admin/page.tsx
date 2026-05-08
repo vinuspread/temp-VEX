@@ -11,9 +11,11 @@ export default async function AdminDashboardPage() {
     return null;
   }
 
-  const stats = await getDashboardStats();
-  const templateListSortMode = await getTemplateListSortMode();
-  const backups = await listBackups();
+  const [stats, templateListSortMode, backups] = await Promise.all([
+    getDashboardStats(),
+    getTemplateListSortMode(),
+    listBackups(),
+  ]);
 
   return (
     <AdminShell
