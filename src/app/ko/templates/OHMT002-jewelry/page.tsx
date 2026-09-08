@@ -66,7 +66,7 @@ function JewelryPageContent() {
               </span>
               <h2 className="text-white mb-12 flex flex-col items-center tracking-[0.05em] max-w-6xl mx-auto space-y-4 break-keep">
                 <span className="block whitespace-nowrap font-extralight text-white/90 text-center text-lg md:text-2xl tracking-tight" style={{ fontFamily: "'Nanum Myeongjo', serif" }}>시간이 지나도 오래 간직할 주얼리</span>
-                <span className="block font-serif font-normal text-[var(--color-primary)] text-center text-4xl md:text-7xl leading-[var(--leading-heading)] md:leading-[var(--leading-heading)]" style={{ fontFamily: "'Nanum Myeongjo', serif" }}>
+                <span className="block font-serif font-normal text-white text-center text-4xl md:text-7xl leading-[var(--leading-heading)] md:leading-[var(--leading-heading)]" style={{ fontFamily: "'Nanum Myeongjo', serif" }}>
                   {"소중한 순간을"} <br /> {"오래 기억할 수 있도록."}
                 </span>
               </h2>
