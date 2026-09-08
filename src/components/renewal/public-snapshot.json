@@ -1,0 +1,868 @@
+{
+  "ko": {
+    "templates": [
+      {
+        "slug": "OHMT002-jewelry",
+        "name": "주얼리 럭셔리",
+        "description": "섬세한 제품 이미지와 고급스러운 브랜드 분위기를 함께 보여줄 수 있는 주얼리 쇼핑몰형 템플릿입니다. 반지, 목걸이, 귀걸이, 웨딩 주얼리처럼 디테일과 신뢰감이 중요한 제품을 우아하게 소개할 수 있으며, 컬렉션 구성, 브랜드 스토리, 프리미엄 제품 소개에 잘 어울립니다. 단순 판매 페이지보다 브랜드의 감도와 가치를 함께 전달하고 싶은 곳에 적합합니다.",
+        "thumbnail_url": "/templates/OHMT002-jewelry/og-image.jpg",
+        "categories": [
+          "retail"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT004-furniture",
+        "name": "모던 가구",
+        "description": "공간의 분위기와 제품의 질감을 차분하게 보여줄 수 있는 프리미엄 가구 쇼핑몰 템플릿입니다. 라운지 체어, 소파, 테이블, 조명, 침대처럼 소재와 형태가 중요한 제품을 감각적으로 소개할 수 있으며, 컬렉션 구성과 브랜드 스토리를 통해 단순 판매를 넘어 라이프스타일 제안까지 자연스럽게 전달할 수 있습니다. 고급 가구, 리빙, 인테리어 브랜드에 잘 어울립니다.",
+        "thumbnail_url": "/templates/OHMT004-furniture/og-image.jpg",
+        "categories": [
+          "retail"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT012-magazine",
+        "name": "에디토리얼 매거진",
+        "description": "문화, 라이프스타일, 인터뷰, 비주얼 에세이를 기사 위계와 이슈형 레이아웃으로 보여주는 에디토리얼 매거진 템플릿.",
+        "thumbnail_url": "/templates/OHMT012-magazine/og-image.jpg",
+        "categories": [
+          "media"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT007-portfolio",
+        "name": "스튜디오 포트폴리오",
+        "description": "브랜드와 프로젝트의 감도를 강하게 보여줄 수 있는 크리에이티브 포트폴리오 템플릿입니다. 대담한 타이포그래피, 프로젝트 리스트, 서비스 소개, 성과 지표, 고객 후기, 저널 콘텐츠를 통해 단순한 작업물 나열을 넘어 스튜디오의 관점과 전문성을 함께 전달할 수 있습니다. 디자인 스튜디오, 브랜딩 회사, 웹에이전시, 프리랜서 포트폴리오에 잘 어울립니다.",
+        "thumbnail_url": "/templates/OHMT007-portfolio/og-image.jpg",
+        "categories": [
+          "portfolio"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT022-yoga",
+        "name": "요가 & 웰니스",
+        "description": "몸과 마음의 균형을 차분하게 전달할 수 있는 요가·웰니스 웹사이트 템플릿입니다. 브랜드 철학, 클래스 소개, 강사진, 수강 후기, 커뮤니티 지표, 무료 체험 예약 흐름이 자연스럽게 구성되어 있어 방문자가 수업의 분위기와 신뢰감을 함께 느낄 수 있습니다. 요가 스튜디오뿐 아니라 필라테스, 명상, 체형 교정, 웰니스 클래스처럼 꾸준한 참여와 예약이 중요한 서비스에 잘 어울립니다.",
+        "thumbnail_url": "/templates/OHMT022-yoga/og-image.jpg",
+        "categories": [
+          "lifestyle"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT008-airline",
+        "name": "트래블 항공",
+        "description": "항공사와 여행 예약 서비스를 신뢰감 있게 보여줄 수 있는 프리미엄 웹사이트 템플릿입니다. 항공권 예약, 노선 안내, 여행지 소개, 서비스 특징, 프로모션 영역을 자연스럽게 구성할 수 있으며, 고객이 여행을 준비하는 과정에서 편안함과 기대감을 함께 느낄 수 있도록 설계되어 있습니다. 항공사뿐 아니라 여행사, 투어, 호텔, 리조트, 프리미엄 이동 서비스에도 잘 어울립니다.",
+        "thumbnail_url": "/templates/OHMT008-airline/og-image.jpg",
+        "categories": [
+          "hospitality"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT026-spa",
+        "name": "스파 웰니스",
+        "description": "프리미엄 스파와 웰니스 서비스를 차분하고 신뢰감 있게 보여줄 수 있는 예약형 웹사이트 템플릿입니다. 피부 고민별 솔루션, 맞춤 상담, 인기 트리트먼트, 테라피스트 소개, 고객 후기, 가격 플랜까지 자연스럽게 구성되어 있어 방문자가 서비스의 전문성과 공간의 분위기를 함께 이해할 수 있습니다. 스파, 피부관리실, 에스테틱, 웰니스 브랜드처럼 상담과 예약 전환이 중요한 서비스에 잘 어울립니다.",
+        "thumbnail_url": "/templates/OHMT026-spa/og-image.jpg",
+        "categories": [
+          "lifestyle"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT023-game",
+        "name": "게임 스튜디오",
+        "description": "게임 스튜디오의 세계관과 개발 역량을 강하게 보여줄 수 있는 브랜드형 웹사이트 템플릿입니다. 대표 게임, 스튜디오 소개, 장르별 전문성, 수상 이력, 개발 소식, 채용 안내까지 자연스럽게 구성되어 있어 단순한 포트폴리오를 넘어 회사의 비전과 제작 철학을 함께 전달할 수 있습니다. 게임 개발사, 인디 스튜디오, 엔터테인먼트 브랜드, 콘텐츠 제작사에 잘 어울립니다.",
+        "thumbnail_url": "/templates/OHMT023-game/og-image.jpg",
+        "categories": [
+          "portfolio"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT019-coffee",
+        "name": "커피",
+        "description": "카페와 커피 브랜드의 감성을 따뜻하게 보여줄 수 있는 웹사이트 템플릿입니다. 시즌 음료, 시그니처 메뉴, 전체 메뉴, 온라인 주문, 리워즈, 매장 안내, 브랜드 스토리까지 자연스럽게 구성되어 있어 방문 전 고객에게 브랜드의 분위기와 이용 흐름을 쉽게 전달할 수 있습니다. 개인 카페, 로스터리, 프랜차이즈, 디저트 브랜드에 잘 어울립니다.",
+        "thumbnail_url": "/templates/OHMT019-coffee/og-image.jpg",
+        "categories": [
+          "retail"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT037-figure-shop",
+        "name": "FORMA 피규어",
+        "description": "소량 생산 피규어와 아트 토이의 수집 가치를 감도 있게 보여줄 수 있는 쇼핑몰형 템플릿입니다. 한정 에디션, 예약 판매, 제품 라인, 제작 과정, 에디션 번호, 마감 디테일을 자연스럽게 구성해 단순한 상품 판매를 넘어 브랜드의 조형 감각과 제작 신뢰도를 함께 전달할 수 있습니다. 피규어, 디자이너 토이, 취미 용품, 컬렉터블 브랜드에 잘 어울립니다.",
+        "thumbnail_url": "/templates/OHMT037-figure-shop/og-image.jpg",
+        "categories": [
+          "retail"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT010-cosmetic",
+        "name": "코스메틱 웰니스",
+        "description": "자연스러운 감성과 전문적인 제품 신뢰감을 함께 보여줄 수 있는 코스메틱 쇼핑몰 템플릿입니다. 고기능성 스킨케어, 비건 뷰티, 클린뷰티, 친환경 패키징처럼 제품의 효능과 브랜드 철학을 함께 전달해야 하는 브랜드에 잘 어울립니다. 제품 카드, 빠른 담기, 브랜드 스토리, 지속가능성 메시지를 통해 단순 판매를 넘어 브랜드의 가치와 분위기까지 자연스럽게 보여줄 수 있습니다.",
+        "thumbnail_url": "/templates/OHMT010-cosmetic/og-image.jpg",
+        "categories": [
+          "retail"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT028-ev",
+        "name": "전기차 컨셉",
+        "description": "도심형 전기차와 스마트 모빌리티 브랜드를 경쾌하고 미래지향적으로 보여줄 수 있는 랜딩페이지 템플릿입니다. 주행거리, 급속 충전, 스마트 주차, 컬러 옵션, 무선 업데이트, 인테리어 요소를 간결하게 전달하면서 사전예약과 구독 전환까지 자연스럽게 연결할 수 있습니다. 전기차, 초소형 모빌리티, 신제품 런칭처럼 기술력과 브랜드 매력을 동시에 보여줘야 하는 프로젝트에 잘 어울립니다.",
+        "thumbnail_url": "/templates/OHMT028-ev/og-image.jpg",
+        "categories": [
+          "retail"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT005-sneaker",
+        "name": "스니커즈 브랜드",
+        "description": "스니커즈와 프리미엄 풋웨어 제품을 역동적으로 보여줄 수 있는 쇼핑몰형 템플릿입니다. 강한 히어로 비주얼, 한정판 드로우, 베스트셀러, 신상품, 할인 프로모션, 고객 후기, 블로그 콘텐츠를 통해 제품의 스타일과 브랜드의 에너지를 함께 전달할 수 있습니다. 스니커즈 브랜드뿐 아니라 스트릿 패션, 스포츠, 라이프스타일 커머스에도 잘 어울립니다.",
+        "thumbnail_url": "/templates/OHMT005-sneaker/og-image.jpg",
+        "categories": [
+          "retail"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT036-amber-grove",
+        "name": "앰버 그로브",
+        "description": "산지의 신뢰감과 제철 상품의 신선함을 따뜻하게 전달할 수 있는 농산물 브랜드형 템플릿입니다. 과수원 소개, 수확 방식, 계절별 과일 상자, 수확 기록 카드, 거래처 후기까지 자연스럽게 구성되어 있어 상품을 단순히 판매하는 것을 넘어 생산자의 정성과 브랜드 이야기를 함께 보여줄 수 있습니다. 과일, 농산물, 로컬 푸드, 선물 세트 브랜드에 잘 어울립니다.",
+        "thumbnail_url": "/templates/OHMT036-amber-grove/og-image.jpg",
+        "categories": [
+          "retail"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT032-community",
+        "name": "커뮤니티 허브",
+        "description": "멤버의 질문, 경험, 후기, 공지를 한곳에 모아 커뮤니티의 흐름을 보기 좋게 정리할 수 있는 커뮤니티형 웹사이트 템플릿입니다. 운영 브리프, 카테고리, 설문, 게시글 피드, 인기글, 태그 영역을 통해 처음 방문한 멤버도 중요한 글과 참여 방식을 빠르게 파악할 수 있습니다. 스터디, 멤버십, 고객 커뮤니티, 브랜드 팬 커뮤니티처럼 지속적인 소통과 재방문이 중요한 서비스에 잘 어울립니다.",
+        "thumbnail_url": "/templates/OHMT032-community/og-image.jpg",
+        "categories": [
+          "service"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT009-car",
+        "name": "오토모티브 카",
+        "description": "전기차와 프리미엄 모빌리티 브랜드를 강렬하게 보여줄 수 있는 자동차 랜딩페이지 템플릿입니다. 대형 히어로 이미지, 차량 스펙, 배터리와 충전 성능, 커넥티드 앱, 인테리어, 고객 후기, 뉴스 섹션을 통해 제품의 기술력과 브랜드 이미지를 함께 전달할 수 있습니다. 자동차뿐 아니라 고가 제품, 테크 브랜드, 신제품 런칭 페이지에도 잘 어울립니다.",
+        "thumbnail_url": "/templates/OHMT009-car/og-image.jpg",
+        "categories": [
+          "corporate"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT016-technology",
+        "name": "로보플로우 테크놀로지",
+        "description": "제품 비전, 첨단 기술 제품과 혁신적인 시스템을 전문적으로 소개할 수 있는 테크놀로지 웹사이트 템플릿입니다. 자율 주행, 온디바이스 AI, 로보틱스, 하드웨어 사양, 제품 라인업, 기술 아티클을 체계적으로 보여줄 수 있어 복잡한 기술도 신뢰감 있게 전달할 수 있습니다. AI 스타트업, 로봇 브랜드, 산업용 솔루션처럼 기술력과 제품 성능을 함께 보여줘야 하는 브랜드에 잘 어울립니다.기능 섹션, 활용 사례, 엔터프라이즈 신뢰 요소를 담는 테크놀로지 및 로보틱스 랜딩 페이지 템플릿.",
+        "thumbnail_url": "/templates/OHMT016-technology/og-image.jpg",
+        "categories": [
+          "corporate"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT011-ir",
+        "name": "기업 IR",
+        "description": "기업의 투자 정보와 성장 방향을 신뢰감 있게 전달할 수 있는 IR 웹사이트 템플릿입니다. 주가 정보, 투자자 키트, 주요 재무 지표, 전략 포트폴리오, ESG 메시지, CEO 서한, 뉴스 및 공지 영역을 통해 투자자와 이해관계자가 필요한 정보를 빠르게 확인할 수 있습니다. 상장 기업, 금융사, 지주회사, 성장 단계의 스타트업처럼 투명성과 전문성이 중요한 조직에 잘 어울립니다.",
+        "thumbnail_url": "/templates/OHMT011-ir/og-image.jpg",
+        "categories": [
+          "corporate"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT014-docs",
+        "name": "문서 워크스페이스",
+        "description": "팀의 지식과 업무 정보를 한곳에 정리할 수 있는 문서형 워크스페이스 템플릿입니다. 시작 가이드, 페이지 생성, 에디터 사용법, 협업, 데이터베이스, 외부 서비스 연동, 검색, 백업까지 문서 서비스에 필요한 흐름을 깔끔하게 담고 있습니다. 제품 가이드, 도움말 센터, 사내 매뉴얼처럼 정보의 구조와 탐색성이 중요한 서비스에 잘 어울립니다.",
+        "thumbnail_url": "/templates/OHMT014-docs/og-image.jpg",
+        "categories": [
+          "corporate"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT015-dashboard",
+        "name": "대시보드",
+        "description": "비즈니스의 운영 현황과 핵심 지표를 한눈에 확인할 수 있는 대시보드형 템플릿입니다. 매출, 주문, 고객 문의, 전환율, 프로젝트 진행률, 할 일, 최근 활동, 현장 노트, KPI 차트를 하나의 화면에 정리해 관리자와 팀원이 현재 상황을 빠르게 파악할 수 있습니다. 자동차 데이터를 예시로 사용하지만, 다양한 서비스의 관리자 페이지와 내부 운영 시스템으로 확장하기 좋습니다.",
+        "thumbnail_url": "/templates/OHMT015-dashboard/og-image.jpg",
+        "categories": [
+          "corporate"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT033-foundation",
+        "name": "파운데이션 · 사회공헌",
+        "description": "재단과 비영리 단체의 활동을 신뢰감 있게 보여줄 수 있는 사회공헌형 웹사이트 템플릿입니다. 대표 프로그램, 참여자 이야기, 성과 지표, 후원·파트너십 문의, 최근 소식까지 한 흐름으로 구성되어 있어 단순한 소개를 넘어 실제 변화와 운영 원칙을 함께 전달할 수 있습니다. 교육, 환경, 장학, 지역 지원처럼 지속적인 기록과 참여가 중요한 기관에 잘 어울립니다.",
+        "thumbnail_url": "/templates/OHMT033-foundation/og-image.jpg",
+        "categories": [
+          "corporate"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT003-exhibition",
+        "name": "현대미술 갤러리",
+        "description": "전시와 작품의 분위기를 깊이 있게 전달할 수 있는 갤러리형 웹사이트 템플릿입니다. 대형 비주얼, 전시 일정, 컬렉션 소개, 티켓 구매, 방문 안내, 이벤트 섹션을 통해 관람객이 전시의 흐름과 공간의 감도를 자연스럽게 이해할 수 있습니다. 미술관, 갤러리, 팝업 전시처럼 작품과 경험을 함께 보여줘야 하는 프로젝트에 잘 어울립니다.",
+        "thumbnail_url": "/templates/OHMT003-exhibition/og-image.jpg",
+        "categories": [
+          "portfolio"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT006-studio",
+        "name": "스튜디오 코퍼레이트",
+        "description": "절제된 미니멀 무드로 건축과 공간 디자인의 철학을 깊이 있게 보여주는 스튜디오형 웹사이트 템플릿입니다. 큰 이미지, 정제된 타이포그래피, 프로젝트 포트폴리오, 소재 소개, 팀 섹션을 통해 결과물뿐 아니라 브랜드가 가진 감도와 전문성을 함께 전달할 수 있습니다. 건축사무소, 인테리어 스튜디오, 공간 디자인 브랜드처럼 신뢰와 미학이 중요한 업종에 잘 어울립니다.",
+        "thumbnail_url": "/templates/OHMT006-studio/og-image.jpg",
+        "categories": [
+          "portfolio"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT021-museum",
+        "name": "전시 뮤지 바티카니",
+        "description": "미술관과 박물관의 전시, 소장품, 관람 경험을 깊이 있게 보여줄 수 있는 아카이브형 웹사이트 템플릿입니다. 대형 비주얼, 오디오 가이드, 컬렉션 소개, 작품 리스트, 큐레이터 노트, 티켓 예매, 기념품샵 구성을 통해 단순한 전시 안내를 넘어 작품의 배경과 공간의 분위기까지 함께 전달할 수 있습니다. 문화예술 기관, 갤러리, 온라인 전시에 잘 어울립니다.",
+        "thumbnail_url": "/templates/OHMT021-museum/og-image.jpg",
+        "categories": [
+          "portfolio"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT025-wedding",
+        "name": "루멘 웨딩",
+        "description": "웨딩의 순간과 브랜드의 감성을 우아하게 보여줄 수 있는 웨딩 포토그래피 템플릿입니다. 대형 비주얼, 촬영 과정, 웨딩 갤러리, 예약 문의 흐름을 통해 고객이 촬영 스타일과 서비스 방식을 자연스럽게 이해할 수 있습니다. 웨딩 사진작가, 스냅 촬영, 웨딩 플래너, 프리미엄 이벤트 브랜드처럼 신뢰와 분위기가 중요한 서비스에 잘 어울립니다.",
+        "thumbnail_url": "/templates/OHMT025-wedding/og-image.jpg",
+        "categories": [
+          "portfolio"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT001-fashion",
+        "name": "패션 연구소",
+        "description": "감각적인 패션 브랜드와 프리미엄 제품을 세련되게 보여줄 수 있는 쇼핑몰형 템플릿입니다. 큰 비주얼, 신상품 구성, 브랜드 철학, 리미티드 에디션, 룩북 섹션을 통해 단순한 상품 판매를 넘어 브랜드가 가진 취향과 분위기를 함께 전달할 수 있습니다. 의류, 가방, 슈즈, 액세서리처럼 이미지와 감도가 중요한 브랜드에 잘 어울립니다.",
+        "thumbnail_url": "/templates/OHMT001-fashion/og-image.jpg",
+        "categories": [
+          "lifestyle"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT024-kids-education",
+        "name": "키즈 에듀케이션",
+        "description": "어린이 교육 브랜드의 즐겁고 창의적인 분위기를 자연스럽게 보여줄 수 있는 키즈 아카데미형 웹사이트 템플릿입니다. 인기 클래스, 교육 철학, 분야별 프로그램, 이벤트 일정, 학부모 후기, 수강 신청 흐름까지 구성되어 있어 방문자가 수업의 내용과 신뢰도를 빠르게 이해할 수 있습니다. 유아·초등 교육, 창의 클래스, 방과후 프로그램처럼 학부모의 관심과 신청 전환이 중요한 서비스에 잘 어울립니다.",
+        "thumbnail_url": "/templates/OHMT024-kids-education/og-image.jpg",
+        "categories": [
+          "lifestyle"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT029-fitness",
+        "name": "피트니스 스튜디오",
+        "description": "신체 분석과 맞춤 코칭을 기반으로 프리미엄 운동 경험을 전달할 수 있는 피트니스·웰니스 웹사이트 템플릿입니다. 리커버리, 스트렝스, 밸런스, 릴렉세이션 프로그램을 체계적으로 소개하고, 파트너십, 전문 트레이너, 품질 관리, 체험 예약 흐름까지 자연스럽게 구성할 수 있습니다. 피트니스 스튜디오, 웰니스 센터, 호텔·리조트 위탁 운영처럼 전문성과 신뢰가 중요한 서비스에 잘 어울립니다.",
+        "thumbnail_url": "/templates/OHMT029-fitness/og-image.jpg",
+        "categories": [
+          "lifestyle"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT030-resort",
+        "name": "해안 럭셔리 리조트",
+        "description": "고요한 해안의 분위기와 프리미엄 휴식 경험을 세련되게 보여줄 수 있는 리조트형 웹사이트 템플릿입니다. 프라이빗 빌라, 웰니스 프로그램, 해안 액티비티, 체크인·체크아웃 예약, 투숙객 후기, 다이닝 소개까지 자연스럽게 구성되어 있어 방문자가 공간의 감도와 서비스 품질을 함께 느낄 수 있습니다. 리조트, 풀빌라, 부티크 호텔, 프라이빗 스테이처럼 휴식과 예약 경험이 중요한 숙박 브랜드에 잘 어울립니다.",
+        "thumbnail_url": "/templates/OHMT030-resort/og-image.jpg",
+        "categories": [
+          "hospitality"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT020-hotel",
+        "name": "럭스 헤이븐 호텔",
+        "description": "고요한 휴식과 프리미엄 경험을 세련되게 전달할 수 있는 호텔·리조트형 웹사이트 템플릿입니다. 대형 비주얼, 체크인·체크아웃 예약 영역, 객실 소개, 서비스와 편의시설, 고객 후기, 예약 요청 폼까지 자연스럽게 구성되어 있어 숙박 브랜드의 분위기와 신뢰감을 함께 보여줄 수 있습니다. 럭셔리 호텔, 풀빌라, 리조트, 스테이 브랜드처럼 공간의 감도와 예약 경험이 중요한 곳에 잘 어울립니다.",
+        "thumbnail_url": "/templates/OHMT020-hotel/og-image.jpg",
+        "categories": [
+          "hospitality"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT027-architecture",
+        "name": "건축 포트폴리오",
+        "description": "건축과 공간 디자인의 철학을 차분하고 깊이 있게 보여줄 수 있는 포트폴리오형 웹사이트 템플릿입니다. 대형 프로젝트 이미지, 설계 경험, 서비스 영역, 주요 프로젝트, 고객 후기 구성을 통해 스튜디오의 전문성과 공간에 대한 태도를 함께 전달할 수 있습니다. 건축사무소, 인테리어 디자인, 공간 설계 브랜드처럼 신뢰와 미학이 중요한 업종에 잘 어울립니다.",
+        "thumbnail_url": "/templates/OHMT027-architecture/og-image.jpg",
+        "categories": [
+          "creative"
+        ],
+        "hashtags": []
+      }
+    ],
+    "packages": [
+      {
+        "id": "public-ko-0",
+        "slug": "starter",
+        "lang": "ko",
+        "name": "Starter",
+        "description": "빠르게 시작하기 위한 핵심 기능 패키지",
+        "price": "2,000,000원",
+        "duration": "평균 소요 기간: 2주 소요 / 부가세 별도",
+        "features": [
+          "템플릿 1개",
+          "기본 페이지 5개 포함",
+          "브랜드 커스터마이징",
+          "반응형 레이아웃",
+          "호스팅 환경 설정 지원 6개월",
+          "무상 수정 2회 제공",
+          "기본 기술 지원 6개월 제공"
+        ],
+        "is_recommended": false,
+        "is_active": true,
+        "sort_order": 0,
+        "created_at": "",
+        "updated_at": ""
+      },
+      {
+        "id": "public-ko-1",
+        "slug": "professional",
+        "lang": "ko",
+        "name": "Professional",
+        "description": "브랜드 맞춤형 프리미엄 디자인 패키지",
+        "price": "4,000,000원",
+        "duration": "평균 소요 기간: 3주 소요 / 부가세 별도",
+        "features": [
+          "템플릿 1개",
+          "기본 페이지 10개 포함",
+          "레이아웃 커스터마이징",
+          "브랜드 커스터마이징",
+          "반응형 레이아웃",
+          "호스팅 환경 설정 지원 1년",
+          "무상 수정 5회 제공",
+          "기본 SEO 세팅",
+          "기본 기술 지원 1년 제공"
+        ],
+        "is_recommended": true,
+        "is_active": true,
+        "sort_order": 1,
+        "created_at": "",
+        "updated_at": ""
+      },
+      {
+        "id": "public-ko-2",
+        "slug": "premium",
+        "lang": "ko",
+        "name": "Premium",
+        "description": "고객 맞춤화 기능확장 프리미엄 패키지",
+        "price": "협의필요",
+        "duration": "평균 소요 기간: 4주 소요 / 부가세 별도",
+        "features": [
+          "템플릿 1개",
+          "콘텐츠 기획을 통한 페이지 산출",
+          "브랜드 커스터마이징",
+          "레이아웃 디자인 고도화",
+          "서비스 구조 설계",
+          "호스팅 환경 설정 지원 1년",
+          "무상 수정 10회 제공",
+          "SEO 및 통계 분석 툴 연동",
+          "우선순위 기술 지원 1년",
+          "추가 기능 확장 지원"
+        ],
+        "is_recommended": false,
+        "is_active": true,
+        "sort_order": 2,
+        "created_at": "",
+        "updated_at": ""
+      }
+    ],
+    "faqs": [
+      {
+        "id": "public-ko-0",
+        "question": "기본 수정 횟수를 초과하면 어떻게 되나요?",
+        "answer": "제작 과정에서 제공되는 기본 수정 횟수를 초과할 경우, 추가 작업 범위를 확인한 뒤 별도 비용을 안내합니다."
+      },
+      {
+        "id": "public-ko-1",
+        "question": "도메인과 호스팅도 관리해 주시나요?",
+        "answer": "네, 선택하신 패키지에 명시된 무상 기간 동안 도메인 연결 및 클라우드 호스팅 인프라 설정을 전적으로 지원하고 대행해 드립니다.\n계약 만료 시점 전에 갱신 안내를 전달해 드립니다."
+      },
+      {
+        "id": "public-ko-2",
+        "question": "검색엔진 최적화(SEO) 지원 수준은 어떻게 되나요?",
+        "answer": "기본적인 SEO(검색 노출을 위한 메타 태그 최적화, 시맨틱 구조 마크업 설계, Google Search Console 등록 대행)는 모든 패키지에 기본 탑재되어 제공됩니다."
+      },
+      {
+        "id": "public-ko-3",
+        "question": "동일한 템플릿을 선택하면 다른 회사 사이트와 유사해 보이지 않나요?",
+        "answer": "그렇지 않습니다. 로고, 전용 서체, 브랜드 고유의 컬러 파레트, 맞춤형 이미지 리소스와 카피라이팅이 1대1로 적용되기 때문에, 결과물은 완전히 유니크하며 브랜드 전용으로 기획 및 개발된 느낌을 줍니다."
+      },
+      {
+        "id": "public-ko-4",
+        "question": "사이트 오픈 후 오류나 유지관리는 어떻게 지원하나요?",
+        "answer": "제작 범위 내 발생하는 오류는 기술지원 기간 동안 확인해 드립니다. 특히 기술지원기간 만료 후 발생하는 제작물의 오류는 기한없이 모두 무상으로 처리해 드립니다.\n문구·이미지 수정이나 지속적인 관리는 Care 플랜을 통해 지원합니다."
+      },
+      {
+        "id": "public-ko-5",
+        "question": "추가 기능 개발도 가능한가요?",
+        "answer": "가능합니다. 템플릿 기본 구성에 포함되지 않은 기능이라도 고객의 서비스 목적과 운영 방식에 맞춰 필요한 기능을 추가로 설계하고 개발할 수 있습니다.\n예약, 결제, 회원가입, 로그인, 마이페이지, 관리자 페이지, 게시판, 문의 폼, 상품 관리, 데이터 연동, 알림, 검색, 필터, 다국어 구성 등 서비스에 필요한 다양한 기능과 솔루션을 프로젝트 성격에 맞게 확장할 수 있습니다. 다만 추가 기능은 구현 범위와 기술 난이도에 따라 일정과 비용이 달라질 수 있으므로, 요청 내용을 확인한 뒤 별도 협의를 통해 제작 가능 여부와 진행 방향을 안내해 드립니다."
+      },
+      {
+        "id": "public-ko-6",
+        "question": "등록된 템플릿 외 주문제작도 가능한가요?",
+        "answer": "가능합니다. 오마이템플릿에 등록된 템플릿을 기반으로 제작하는 방식뿐 아니라, 고객이 원하는 목적과 서비스 구조에 맞춰 완전히 새로운 웹사이트, 앱 화면, 서비스 플랫폼, 관리자 시스템, 예약·결제·회원 기능 등 다양한 디자인과 시스템 개발을 진행할 수 있습니다.\n업종, 기능 범위, 운영 방식에 따라 필요한 설계가 달라지므로 이메일 문의를 통해 요청 내용을 보내주시면 검토 후 제작 가능 여부와 진행 방향을 안내해 드립니다."
+      },
+      {
+        "id": "public-ko-7",
+        "question": "법인/사업자 결제 시 계약서 작성과 세금계산서 발행이 가능한가요?",
+        "answer": "네, 가능합니다. 모든 프로젝트는 작업 시작 전 구체적인 과업 범위와 납기일, 유지보수 규정을 명시한 표준계약서를 작성(비대면 전자계약 지원)한 뒤 안전하게 진행됩니다.\n전자세금계산서(부가세 10% 별도)는 사업자등록증 사본과 세금계산서용 이메일 주소를 공유해 주시면 계약 체결 후 즉시 발행해 드립니다."
+      }
+    ],
+    "unavailable": false
+  },
+  "en": {
+    "templates": [
+      {
+        "slug": "OHMT006-studio",
+        "name": "Studio Corporate",
+        "description": "A minimal studio website template designed to present architecture, spatial design, and creative portfolios with quiet sophistication. Large imagery, refined typography, project showcases, material-focused sections, and team introductions help communicate not only the final work, but also the philosophy and expertise behind it. This template is ideal for studios and brands where trust, detail, and visual restraint matter.",
+        "thumbnail_url": "/templates/OHMT006-studio/og-image.jpg",
+        "categories": [
+          "portfolio"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT035-atelier-house",
+        "name": "Atelier House",
+        "description": "A refined living ecommerce template designed for wooden furniture, lighting, and craft-based lifestyle brands. It brings together product collections, studio storytelling, material details, craftsmanship, quality guarantees, curated product pairings, journal content, and newsletter sections in a calm and trustworthy flow. More than a simple product page, this template helps communicate the philosophy behind the brand and the lasting value of well-made products.",
+        "thumbnail_url": "/templates/OHMT035-atelier-house/og-image.jpg",
+        "categories": [
+          "retail"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT002-jewelry",
+        "name": "Jewelry Luxury",
+        "description": "A refined jewelry mall template designed to present delicate products with a premium brand mood. It is ideal for rings, necklaces, earrings, wedding jewelry, and fine jewelry collections where detail, trust, and visual quality matter. With space for collections, brand storytelling, and elegant product presentation, this template helps create more than a shopping page. It builds a polished online showroom that communicates value, taste, and exclusivity.",
+        "thumbnail_url": "/templates/OHMT002-jewelry/og-image.jpg",
+        "categories": [
+          "retail"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT011-ir",
+        "name": "Corporate IR",
+        "description": "A professional investor relations template designed to present corporate value, financial information, and long-term growth strategy with clarity and trust. It includes stock information, investor kits, key financial metrics, strategic portfolios, ESG messaging, CEO letters, news, announcements, and investor resources, helping shareholders and stakeholders access essential information quickly. This template is well suited for public companies, financial firms, holding companies, and growth-stage startups where transparency and credibility matter.",
+        "thumbnail_url": "/templates/OHMT011-ir/og-image.jpg",
+        "categories": [
+          "corporate"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT005-sneaker",
+        "name": "Sneaker Brutalist",
+        "description": "A dynamic ecommerce template designed for sneakers and premium footwear brands. With a bold hero section, limited-edition draws, best sellers, new arrivals, promotional offers, customer reviews, and blog content, it helps communicate both product style and brand energy. This template works well not only for sneaker stores, but also for streetwear, sports, and lifestyle commerce brands.",
+        "thumbnail_url": "/templates/OHMT005-sneaker/og-image.jpg",
+        "categories": [
+          "retail"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT009-car",
+        "name": "Automotive Car",
+        "description": "A premium automotive landing page template designed to present electric vehicles and mobility brands with strong visual impact. With large hero imagery, vehicle specifications, battery and charging performance, connected app features, interior highlights, owner stories, and news sections, it helps communicate both technical excellence and brand value. Beyond automotive brands, it can also work well for high-end products, technology brands, and new product launches.",
+        "thumbnail_url": "/templates/OHMT009-car/og-image.jpg",
+        "categories": [
+          "corporate"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT036-amber-grove",
+        "name": "Amber Grove",
+        "description": "A warm and trustworthy template designed for seasonal fruit, farm-direct products, and local food brands. It brings together orchard storytelling, harvest methods, seasonal fruit boxes, harvest record cards, customer testimonials, and FAQ sections in a clear flow. Rather than simply listing products, this template helps communicate the care behind each item, the freshness of the season, and the credibility of the producer. It is a strong fit for fruit farms, local food stores, premium produce brands, and gift box businesses.",
+        "thumbnail_url": "/templates/OHMT036-amber-grove/og-image.jpg",
+        "categories": [
+          "retail"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT025-wedding",
+        "name": "Lumen Wedding",
+        "description": "A refined wedding photography template designed to present emotional moments, elegant visuals, and a premium service experience. It includes large imagery, photography process sections, curated wedding galleries, and booking inquiry flows, helping visitors understand both the visual style and the way the service is delivered. This template is ideal for wedding photographers, bridal studios, planners, and premium event brands where trust, atmosphere, and personal connection matter.",
+        "thumbnail_url": "/templates/OHMT025-wedding/og-image.jpg",
+        "categories": [
+          "portfolio"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT010-cosmetic",
+        "name": "Cosmetic Wellness",
+        "description": "A refined cosmetic ecommerce template designed to present natural beauty, product performance, and brand trust in one polished layout. It works especially well for skincare, vegan beauty, clean beauty, eco-conscious packaging, and ingredient-focused brands that need to communicate both effectiveness and philosophy. With product cards, quick shopping sections, brand storytelling, and sustainability messages, this template helps create a beauty store that feels thoughtful, credible, and visually appealing.",
+        "thumbnail_url": "/templates/OHMT010-cosmetic/og-image.jpg",
+        "categories": [
+          "retail"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT031-luma-camera",
+        "name": "LUMA Camera",
+        "description": "A refined product commerce template designed for compact cameras and premium digital devices. It presents product size, fixed-lens features, color rendering, low-light performance, image detail, sample scenes, and app-connected notes in a calm and polished structure. More than a simple product sales page, this template helps communicate the shooting experience, product philosophy, and brand sensibility behind the device. It is a strong fit for camera, creator gear, and technology brands.",
+        "thumbnail_url": "/templates/OHMT031-luma-camera/og-image.jpg",
+        "categories": [
+          "retail"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT004-furniture",
+        "name": "Furniture Modern",
+        "description": "A premium furniture ecommerce template designed to present the mood of a space and the texture of each product with calm sophistication. It works well for lounge chairs, sofas, tables, lighting, beds, and other pieces where material, form, and atmosphere matter. With curated collections and brand storytelling, this template goes beyond product sales and helps communicate a complete lifestyle experience.",
+        "thumbnail_url": "/templates/OHMT004-furniture/og-image.jpg",
+        "categories": [
+          "retail"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT019-coffee",
+        "name": "Coffee",
+        "description": "A warm and polished website template designed for cafés and coffee brands. It brings together seasonal drinks, signature menus, full menu sections, online ordering, rewards, store locations, and brand storytelling in one clear flow. This template helps customers understand the mood of the café before visiting and makes it easy to guide them toward ordering, pickup, or store visits.",
+        "thumbnail_url": "/templates/OHMT019-coffee/og-image.jpg",
+        "categories": [
+          "retail"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT032-community",
+        "name": "Community Hub",
+        "description": "A community website template designed to organize member questions, shared experiences, reviews, and announcements in one clear space. It includes operation briefs, categories, polls, post feeds, popular posts, and tag navigation, helping new members quickly understand what to read, where to participate, and how the community works. This template is a strong fit for study groups, memberships, customer communities, brand communities, and services that depend on ongoing participation and return visits.",
+        "thumbnail_url": "/templates/OHMT032-community/og-image.jpg",
+        "categories": [
+          "service"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT012-magazine",
+        "name": "Editorial Magazine",
+        "description": "An editorial magazine template for culture, lifestyle, interviews, and visual essays, built with strong article hierarchy and flexible issue-style layouts.",
+        "thumbnail_url": "/templates/OHMT012-magazine/og-image.jpg",
+        "categories": [
+          "media"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT014-docs",
+        "name": "Docs Workspace",
+        "description": "A clean documentation workspace template designed to organize team knowledge, product guides, and internal information in one structured place. It includes getting started pages, page creation, editor guides, collaboration features, databases, integrations, search, and backup flows. This template works especially well for help centers, product documentation, internal manuals, and knowledge-based services where clarity and easy navigation matter.",
+        "thumbnail_url": "/templates/OHMT014-docs/og-image.jpg",
+        "categories": [
+          "corporate"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT016-technology",
+        "name": "Robotflow Technology",
+        "description": "A technology website template designed to present advanced products, autonomous systems, and innovation-driven brands with clarity and credibility. It can organize autonomous navigation, on-device AI, robotics capabilities, hardware specifications, product lineups, and technical articles in a professional structure. This template is a strong fit for AI startups, robotics brands, industrial solutions, and companies that need to explain both technical performance and product value.",
+        "thumbnail_url": "/templates/OHMT016-technology/og-image.jpg",
+        "categories": [
+          "corporate"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT033-foundation",
+        "name": "Foundation & CSR",
+        "description": "A foundation website template designed to present nonprofit programs, measurable impact, and participant stories with clarity and trust. It brings together core programs, impact metrics, personal stories, news updates, donation or partnership inquiries, and annual report-style content in one organized structure. This template is ideal for foundations, NGOs, CSR initiatives, education programs, environmental projects, and organizations that need to show both purpose and accountability.",
+        "thumbnail_url": "/templates/OHMT033-foundation/og-image.jpg",
+        "categories": [
+          "corporate"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT015-dashboard",
+        "name": "Dashboard",
+        "description": "A dashboard template designed to help teams monitor business operations and key metrics in one organized interface. It brings together revenue, orders, customer inquiries, conversion rates, project progress, task lists, recent activity, field notes, and KPI charts, allowing managers and team members to understand the current status quickly. Although the sample data is based on automotive operations, the structure can be adapted for many admin pages and internal business systems.",
+        "thumbnail_url": "/templates/OHMT015-dashboard/og-image.jpg",
+        "categories": [
+          "corporate"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT007-portfolio",
+        "name": "Portfolio Brutalist",
+        "description": "A bold creative portfolio template designed to present a studio’s work, services, and point of view with strong visual impact. With expressive typography, project lists, service sections, performance metrics, testimonials, and journal content, it goes beyond a simple gallery and helps communicate expertise, taste, and credibility. This template is ideal for creative studios, branding agencies, web agencies, and independent professionals.",
+        "thumbnail_url": "/templates/OHMT007-portfolio/og-image.jpg",
+        "categories": [
+          "portfolio"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT021-museum",
+        "name": "Exhibition Musei Vaticani",
+        "description": "A museum and collection archive template designed to present exhibitions, artworks, and visitor experiences with depth and refinement. With large visuals, audio guides, curated collections, artwork lists, curator notes, ticket booking, and museum shop sections, it goes beyond basic exhibition information and helps communicate the story, atmosphere, and cultural value behind each work. This template is ideal for museums, galleries, art institutions, and online exhibitions.",
+        "thumbnail_url": "/templates/OHMT021-museum/og-image.jpg",
+        "categories": [
+          "portfolio"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT023-game",
+        "name": "Game Studio",
+        "description": "A bold website template designed to present a game studio’s worlds, creative vision, and development expertise. It brings together featured games, studio introduction, genre expertise, awards, development updates, and recruiting sections, helping the brand communicate more than a simple portfolio. This template is a strong fit for game studios, indie developers, entertainment brands, and creative teams building immersive digital experiences.",
+        "thumbnail_url": "/templates/OHMT023-game/og-image.jpg",
+        "categories": [
+          "portfolio"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT003-exhibition",
+        "name": "Exhibition Gallery",
+        "description": "An exhibition-style website template designed to present artworks, collections, and cultural experiences with a refined visual flow. With large imagery, exhibition schedules, ticket sections, visitor information, collection highlights, and event listings, it helps visitors understand both the content and atmosphere of an exhibition. It is ideal for galleries, museums, pop-up exhibitions, and projects that need to communicate story, space, and experience together.",
+        "thumbnail_url": "/templates/OHMT003-exhibition/og-image.jpg",
+        "categories": [
+          "portfolio"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT026-spa",
+        "name": "Spa Wellness",
+        "description": "A premium spa and wellness website template designed to present treatments, consultation flows, and professional care with calm sophistication. It includes skin concern solutions, personalized consultation, popular treatments, therapist profiles, customer testimonials, pricing plans, and case study sections, helping visitors understand both the expertise of the service and the atmosphere of the space. This template works well for spas, skincare clinics, esthetic salons, and wellness brands where trust and booking conversion matter.",
+        "thumbnail_url": "/templates/OHMT026-spa/og-image.jpg",
+        "categories": [
+          "lifestyle"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT022-yoga",
+        "name": "Yoga & Wellness",
+        "description": "A calm and refined website template designed for yoga, wellness, and mindful movement studios. It brings together brand philosophy, class introductions, instructor profiles, community metrics, student testimonials, and a free trial booking flow, helping visitors understand the atmosphere of the studio before making a reservation. This template works well for yoga studios, Pilates centers, meditation classes, posture correction programs, and wellness services where trust and continuous participation matter.",
+        "thumbnail_url": "/templates/OHMT022-yoga/og-image.jpg",
+        "categories": [
+          "lifestyle"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT029-fitness",
+        "name": "Fitness Studio",
+        "description": "A premium fitness and wellness website template designed to present personalized training, body analysis, and high-quality studio operations with confidence. It can organize recovery, strength, balance, and relaxation programs, while also highlighting partnerships, certified trainers, quality control, and free trial booking flows. This template is well suited for fitness studios, wellness centers, hotel and resort fitness operations, and services where expertise, trust, and consistent experience matter.",
+        "thumbnail_url": "/templates/OHMT029-fitness/og-image.jpg",
+        "categories": [
+          "lifestyle"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT024-kids-education",
+        "name": "Kids Education",
+        "description": "A cheerful and trustworthy website template designed for kids’ academies, creative classes, and children’s education programs. It brings together popular classes, educational philosophy, program categories, event schedules, parent testimonials, and enrollment calls-to-action, helping visitors understand both the learning experience and the credibility of the academy. This template works especially well for early childhood education, elementary programs, creative workshops, and after-school classes where parent trust and enrollment conversion matter.",
+        "thumbnail_url": "/templates/OHMT024-kids-education/og-image.jpg",
+        "categories": [
+          "lifestyle"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT001-fashion",
+        "name": "Fashion Laboratory",
+        "description": "A refined ecommerce template designed for fashion brands and premium product collections. With bold visuals, new arrival sections, brand storytelling, limited editions, and lookbook-style layouts, it helps present more than products. It creates a polished brand experience built around mood, taste, and visual identity. This template works especially well for brands where imagery, detail, and atmosphere are essential.",
+        "thumbnail_url": "/templates/OHMT001-fashion/og-image.jpg",
+        "categories": [
+          "lifestyle"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT030-resort",
+        "name": "Coastal Luxury Resort",
+        "description": "A premium resort website template designed to present coastal relaxation, private villas, and refined hospitality experiences. It brings together villa introductions, wellness programs, coastal activities, check-in and check-out booking flows, guest reviews, and dining sections in a calm and polished structure. This template is a strong fit for resorts, pool villas, boutique hotels, and private stay brands where atmosphere, service quality, and reservation experience matter.",
+        "thumbnail_url": "/templates/OHMT030-resort/og-image.jpg",
+        "categories": [
+          "hospitality"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT008-airline",
+        "name": "Travel Airline",
+        "description": "A premium website template designed for airlines and travel booking services that need to communicate trust, comfort, and a smooth travel experience. It can present flight booking, routes, destinations, service features, promotions, and membership information in a polished structure. Beyond airlines, this template also works well for travel agencies, tour platforms, hotels, resorts, airport transfers, and premium mobility services.",
+        "thumbnail_url": "/templates/OHMT008-airline/og-image.jpg",
+        "categories": [
+          "hospitality"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT020-hotel",
+        "name": "Luxe Haven Hotel",
+        "description": "A luxury hotel and resort website template designed to present quiet relaxation, premium service, and a refined booking experience. With large visuals, check-in and check-out fields, room and suite introductions, amenities, guest testimonials, and booking request forms, it helps communicate both atmosphere and trust. This template is ideal for hotels, private villas, resorts, and stay brands where space, service, and reservation flow matter.",
+        "thumbnail_url": "/templates/OHMT020-hotel/og-image.jpg",
+        "categories": [
+          "hospitality"
+        ],
+        "hashtags": []
+      },
+      {
+        "slug": "OHMT027-architecture",
+        "name": "Architecture Portfolio",
+        "description": "A refined portfolio website template designed to present architecture, spatial design, and studio philosophy with calm sophistication. Large project imagery, service sections, design experience, selected works, and client testimonials help communicate both professional credibility and a thoughtful approach to space. This template is well suited for architecture firms, interior studios, and spatial design brands where trust, aesthetics, and detail matter.",
+        "thumbnail_url": "/templates/OHMT027-architecture/og-image.jpg",
+        "categories": [
+          "creative"
+        ],
+        "hashtags": []
+      }
+    ],
+    "packages": [
+      {
+        "id": "public-en-0",
+        "slug": "starter",
+        "lang": "en",
+        "name": "Starter",
+        "description": "Essential package to get started fast",
+        "price": "$1,500",
+        "duration": "Delivery: 2 weeks",
+        "features": [
+          "1 template selection",
+          "5 pages included",
+          "Brand customization",
+          "Responsive layout",
+          "Hosting environment setup support for 6 months",
+          "2 revision rounds",
+          "6 months of basic technical support"
+        ],
+        "is_recommended": false,
+        "is_active": true,
+        "sort_order": 0,
+        "created_at": "",
+        "updated_at": ""
+      },
+      {
+        "id": "public-en-1",
+        "slug": "professional",
+        "lang": "en",
+        "name": "Professional",
+        "description": "Tailored premium design package",
+        "price": "$3,000",
+        "duration": "Delivery: 3 weeks",
+        "features": [
+          "1 template selection",
+          "10 pages included",
+          "Layout customization",
+          "Brand customization",
+          "Responsive layout",
+          "Hosting environment setup support for 1 year",
+          "5 revision rounds",
+          "Basic SEO setup",
+          "1 year of basic technical support"
+        ],
+        "is_recommended": true,
+        "is_active": true,
+        "sort_order": 1,
+        "created_at": "",
+        "updated_at": ""
+      },
+      {
+        "id": "public-en-2",
+        "slug": "premium",
+        "lang": "en",
+        "name": "Premium",
+        "description": "Fully customized, feature-expandable premium package",
+        "price": "Custom Quote",
+        "duration": "Delivery: 4 weeks",
+        "features": [
+          "1 template selection",
+          "Page count determined through content planning",
+          "Brand customization",
+          "Layout and design refinement",
+          "Service structure planning",
+          "Hosting environment setup support for 1 year",
+          "10 revision rounds",
+          "SEO and analytics integration",
+          "1 year of priority technical support",
+          "Additional feature development support"
+        ],
+        "is_recommended": false,
+        "is_active": true,
+        "sort_order": 2,
+        "created_at": "",
+        "updated_at": ""
+      }
+    ],
+    "faqs": [
+      {
+        "id": "public-en-0",
+        "question": "What happens if I need more revisions than my package includes?",
+        "answer": "If you exceed the number of revision rounds included in your package, we will review the additional work and provide a separate quote before proceeding."
+      },
+      {
+        "id": "public-en-1",
+        "question": "Do you help with domain and hosting setup?",
+        "answer": "Yes. During the complimentary support period included in your package, we handle domain connection and cloud hosting setup for you.\n\nWe will also send you a renewal reminder before the support period ends."
+      },
+      {
+        "id": "public-en-2",
+        "question": "What level of SEO support is included?",
+        "answer": "All packages include essential SEO setup, including optimized meta tags, semantic page structure, and Google Search Console registration."
+      },
+      {
+        "id": "public-en-3",
+        "question": "Will my website look similar to others using the same template?",
+        "answer": "No. Each website is tailored to the individual brand with its own logo, typography, color palette, imagery, content, and copy.\n\nThe final result is designed to feel distinctive and purpose-built for your brand rather than like an off-the-shelf template."
+      },
+      {
+        "id": "public-en-4",
+        "question": "How are bugs and ongoing maintenance handled after launch?",
+        "answer": "Any issues related to the original development scope will be handled during the technical support period included in your package.\n\nBugs caused by our original work will continue to be fixed at no additional cost, even after the support period has ended.\n\nContent updates, such as changing text or images, and ongoing website management are available through our Care plans."
+      },
+      {
+        "id": "public-en-5",
+        "question": "Can you develop additional features?",
+        "answer": "Yes. We can design and develop features that are not included in the original template based on your service goals and operational needs.\n\nThis may include booking, payments, registration, login, user accounts, admin dashboards, boards, inquiry forms, product management, data integrations, notifications, search, filters, multilingual support, and other service-specific solutions.\n\nThe timeline and cost will depend on the scope and technical complexity. Once we review your requirements, we will confirm feasibility and recommend the best way to proceed."
+      },
+      {
+        "id": "public-en-6",
+        "question": "Can you create a fully custom project without using one of the listed templates?",
+        "answer": "Yes. In addition to template-based projects, we can create fully custom websites, app interfaces, service platforms, admin systems, booking and payment systems, membership features, and other digital products.\n\nBecause the required structure and development approach vary by industry, features, and operating model, please send us your requirements by email. We will review them and advise you on feasibility, scope, and next steps."
+      },
+      {
+        "id": "public-en-7",
+        "question": "Can business clients sign a contract and receive a tax invoice?",
+        "answer": "Yes. Before work begins, every project is covered by a formal service agreement that outlines the scope, delivery schedule, and maintenance terms. Electronic signing is available.\n\nFor Korean business clients, we can issue an electronic tax invoice with 10% VAT added separately. Please provide a copy of your business registration certificate and the email address to be used for billing."
+      }
+    ],
+    "unavailable": false
+  }
+}
