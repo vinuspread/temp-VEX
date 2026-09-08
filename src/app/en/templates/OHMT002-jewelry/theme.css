@@ -6,11 +6,13 @@
   --text-h3: clamp(1.5rem, 3vw, 2rem);
   --text-lead: clamp(1.125rem, 2vw, 1.5rem);
   --leading-display: 0.95;
-  --leading-heading: 1.1;
+  --leading-heading: 1;
   --leading-body: 1.6;
 
-  --color-primary: #1E352F;
-  --color-primary-hover: #16261F;
+  --color-primary: #70C5BB;
+  --color-primary-hover: #59AEA4;
+  --color-primary-ink: #246E67;
+  --color-on-primary: #102A27;
   --color-secondary: #171717;
   --color-bg: #FAF8F5;
   --color-bg-secondary: #FFFFFF;
@@ -25,7 +27,7 @@
   --font-heading: 'Playfair Display', Georgia, serif;
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 
-  --focus-outline: 2px solid var(--color-primary);
+  --focus-outline: 2px solid var(--color-primary-ink);
   --focus-outline-offset: 2px;
 }
 

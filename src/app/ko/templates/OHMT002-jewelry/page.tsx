@@ -42,7 +42,7 @@ function JewelryPageContent() {
         <Navbar />
 
         {/* Hero */}
-        <section className="relative h-screen flex items-center justify-center overflow-hidden">
+        <section className="relative min-h-[100dvh] flex items-center justify-center overflow-hidden">
           <motion.div
             style={{ scale: heroScale, opacity: heroOpacity }}
             className="absolute inset-0 z-0"
@@ -143,7 +143,7 @@ function JewelryPageContent() {
                   </Link>
                   <div className="space-y-1 text-center">
                     <Link href={`/ko/templates/OHMT002-jewelry/product/${item.id}`} className="block">
-                      <h4 className="text-sm md:text-base font-serif font-bold text-neutral-800 group-hover:text-[var(--color-primary)] transition-colors leading-tight truncate">{item.name}</h4>
+                      <h4 className="text-sm md:text-base font-serif font-bold text-neutral-800 group-hover:text-[var(--color-primary)] transition-colors leading-none truncate">{item.name}</h4>
                     </Link>
                     <p className="text-sm text-[var(--color-primary)] font-medium">{item.price}</p>
                   </div>
@@ -206,10 +206,10 @@ function JewelryPageContent() {
 }
 
 
-export default function JewelryPage(props: any) {
+export default function JewelryPage() {
   return (
     <React.Suspense fallback={null}>
-      <JewelryPageContent {...props} />
+      <JewelryPageContent />
     </React.Suspense>
   );
 }

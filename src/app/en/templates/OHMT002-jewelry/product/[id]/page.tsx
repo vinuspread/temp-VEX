@@ -118,7 +118,7 @@ export default function ProductDetailPage() {
 
   return (
     <TemplateWrapper theme={theme}>
-      <main className="min-h-screen bg-[#FAF8F5] text-[#1E352F] font-sans selection:bg-[#C5A880] selection:text-white pb-20">
+      <main className="min-h-screen bg-[#FAF8F5] text-neutral-900 font-sans selection:bg-[var(--color-primary)] selection:text-[var(--color-on-primary)] pb-20">
         <Navbar />
 
         <div className="max-w-[1440px] mx-auto px-6 md:px-12 pt-28 md:pt-36">
@@ -134,13 +134,13 @@ export default function ProductDetailPage() {
           <div className="grid md:grid-cols-2 gap-12 md:gap-24 items-start">
 
             {/* Left: Sticky Image Gallery */}
-            <div className="md:sticky md:top-28 w-full aspect-[4/5] bg-white border border-[#1E352F]/10 overflow-hidden relative shadow-sm">
+            <div className="md:sticky md:top-28 w-full aspect-[4/5] bg-white border border-neutral-900/10 overflow-hidden relative shadow-sm">
               <img
                 src={product.img}
                 alt={product.name}
                 className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
               />
-              <span className="absolute top-6 left-6 text-[0.62rem] font-bold uppercase tracking-[0.3em] bg-[#1E352F] text-white px-3 py-1.5">
+              <span className="absolute top-6 left-6 text-[0.62rem] font-bold uppercase tracking-[0.3em] bg-[var(--color-primary)] text-[var(--color-on-primary)] px-3 py-1.5">
                 {product.category}
               </span>
             </div>
@@ -155,8 +155,8 @@ export default function ProductDetailPage() {
                 {product.price}
               </div>
 
-              <div className="border-t border-b border-[#1E352F]/10 py-6 mb-8">
-                <p className="text-[0.98rem] leading-relaxed text-[#1E352F]/80 mb-6 font-normal break-keep">
+              <div className="border-t border-b border-neutral-900/10 py-6 mb-8">
+                <p className="text-[0.98rem] leading-relaxed text-neutral-700 mb-6 font-normal">
                   {product.desc}
                 </p>
                 <div className="flex items-center gap-2 text-[0.8rem] text-[#C5A880] uppercase tracking-[0.15em] font-bold">
@@ -168,23 +168,23 @@ export default function ProductDetailPage() {
               <div className="mb-8">
                 <h3 className="text-[0.8rem] uppercase tracking-[0.2em] font-bold mb-4">Specifications</h3>
                 <div className="text-[0.9rem]">
-                  <div className="flex items-center justify-between py-4 border-b border-[#1E352F]/10">
-                    <span className="text-[#1E352F]/50 text-[0.75rem] uppercase tracking-[0.1em]">Gemstone</span>
+                  <div className="flex items-center justify-between py-4 border-b border-neutral-900/10">
+                    <span className="text-neutral-500 text-[0.75rem] uppercase tracking-[0.1em]">Gemstone</span>
                     <span className="font-medium">{product.specs.gemstone}</span>
                   </div>
-                  <div className="flex items-center justify-between py-4 border-b border-[#1E352F]/10">
-                    <span className="text-[#1E352F]/50 text-[0.75rem] uppercase tracking-[0.1em]">Metal Type</span>
+                  <div className="flex items-center justify-between py-4 border-b border-neutral-900/10">
+                    <span className="text-neutral-500 text-[0.75rem] uppercase tracking-[0.1em]">Metal Type</span>
                     <span className="font-medium">{product.specs.metal}</span>
                   </div>
                   {product.specs.carat && (
-                    <div className="flex items-center justify-between py-4 border-b border-[#1E352F]/10">
-                      <span className="text-[#1E352F]/50 text-[0.75rem] uppercase tracking-[0.1em]">Carat Weight</span>
+                    <div className="flex items-center justify-between py-4 border-b border-neutral-900/10">
+                      <span className="text-neutral-500 text-[0.75rem] uppercase tracking-[0.1em]">Carat Weight</span>
                       <span className="font-medium">{product.specs.carat}</span>
                     </div>
                   )}
                   {product.specs.clarity && (
-                    <div className="flex items-center justify-between py-4 border-b border-[#1E352F]/10">
-                      <span className="text-[#1E352F]/50 text-[0.75rem] uppercase tracking-[0.1em]">Clarity Grade</span>
+                    <div className="flex items-center justify-between py-4 border-b border-neutral-900/10">
+                      <span className="text-neutral-500 text-[0.75rem] uppercase tracking-[0.1em]">Clarity Grade</span>
                       <span className="font-medium">{product.specs.clarity}</span>
                     </div>
                   )}
@@ -196,13 +196,13 @@ export default function ProductDetailPage() {
                 <div className="flex gap-4">
                   <button
                     onClick={() => alert("Added to cart successfully.")}
-                    className="flex-1 bg-[#1E352F] text-[#FAF8F5] py-4 text-[0.85rem] uppercase tracking-[0.2em] font-bold hover:opacity-90 transition-opacity flex items-center justify-center gap-3"
+                    className="flex-1 bg-[var(--color-primary)] text-[var(--color-on-primary)] py-4 text-[0.85rem] uppercase tracking-[0.2em] font-bold hover:bg-[var(--color-primary-hover)] transition-colors flex items-center justify-center gap-3"
                   >
                     <ShoppingBag className="w-4 h-4" /> Add to Cart
                   </button>
                   <button
                     onClick={() => setIsLiked(!isLiked)}
-                    className={`w-14 border border-[#1E352F]/20 flex items-center justify-center transition-colors ${isLiked ? "bg-red-50/50 border-red-200 text-red-500" : "hover:bg-[#1E352F]/5"}`}
+                    className={`w-14 border border-neutral-900/20 flex items-center justify-center transition-colors ${isLiked ? "bg-red-50/50 border-red-200 text-red-500" : "hover:bg-neutral-900/5"}`}
                   >
                     <svg className="w-5 h-5 text-red-500" fill={isLiked ? "currentColor" : "none"} viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
@@ -212,26 +212,26 @@ export default function ProductDetailPage() {
 
                 <button
                   onClick={() => setBookingModal(true)}
-                  className="w-full border border-[#1E352F] py-4 text-[0.85rem] uppercase tracking-[0.2em] font-bold text-[#1E352F] hover:bg-[#1E352F] hover:text-white transition-all flex items-center justify-center gap-3"
+                  className="w-full border border-neutral-900 py-4 text-[0.85rem] uppercase tracking-[0.2em] font-bold text-neutral-900 hover:bg-neutral-900 hover:text-white transition-all flex items-center justify-center gap-3"
                 >
                   <Calendar className="w-4 h-4" /> Book Salon Appointment
                 </button>
               </div>
 
               {/* Premium Guarantee Badges */}
-              <div className="mt-10 grid grid-cols-2 gap-4 border-t border-[#1E352F]/10 pt-8">
+              <div className="mt-10 grid grid-cols-2 gap-4 border-t border-neutral-900/10 pt-8">
                 <div className="flex gap-3 items-start">
                   <Shield className="w-5 h-5 text-[#C5A880] shrink-0" />
                   <div>
                     <h4 className="text-[0.85rem] font-bold uppercase tracking-[0.1em] mb-1">Lifetime Warranty</h4>
-                    <p className="text-[0.72rem] text-[#1E352F]/60 leading-relaxed">Each piece is backed by a full warranty card and rigid inspection.</p>
+                    <p className="text-[0.72rem] text-neutral-600 leading-relaxed">Each piece is backed by a full warranty card and rigid inspection.</p>
                   </div>
                 </div>
                 <div className="flex gap-3 items-start">
                   <Sparkles className="w-5 h-5 text-[#C5A880] shrink-0" />
                   <div>
                     <h4 className="text-[0.85rem] font-bold uppercase tracking-[0.1em] mb-1">Maison Packaging</h4>
-                    <p className="text-[0.72rem] text-[#1E352F]/60 leading-relaxed">Delivered in our signature forest green leather Maison casing.</p>
+                    <p className="text-[0.72rem] text-neutral-600 leading-relaxed">Delivered in our signature forest green leather Maison casing.</p>
                   </div>
                 </div>
               </div>
@@ -243,10 +243,10 @@ export default function ProductDetailPage() {
 
         {/* Private Salon Appointment Booking Modal */}
         {bookingModal && (
-          <div className="fixed inset-0 z-50 bg-[#1E352F]/40 backdrop-blur-md flex items-center justify-center p-6">
-            <div className="bg-[#FAF8F5] border border-[#1E352F]/20 max-w-[480px] w-full p-8 shadow-2xl relative">
+          <div className="fixed inset-0 z-50 bg-neutral-900/40 backdrop-blur-md flex items-center justify-center p-6">
+            <div className="bg-[#FAF8F5] border border-neutral-900/20 max-w-[480px] w-full p-8 shadow-2xl relative">
               <h2 className="font-[family-name:var(--theme-font-heading)] text-[1.8rem] font-bold mb-4 tracking-tight">Private Salon Booking</h2>
-              <p className="text-[0.85rem] text-[#1E352F]/70 mb-6 leading-relaxed">
+              <p className="text-[0.85rem] text-neutral-600 mb-6 leading-relaxed">
                 Experience private 1:1 specialist curation at our exclusive offline salon.
               </p>
 
@@ -258,7 +258,7 @@ export default function ProductDetailPage() {
                     required
                     value={formData.name}
                     onChange={e => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full bg-white border border-[#1E352F]/15 px-4 py-2.5 text-[0.9rem] focus:outline-none focus:border-[#C5A880]"
+                    className="w-full bg-white border border-neutral-900/15 px-4 py-2.5 text-[0.9rem] focus:outline-none focus:border-[var(--color-primary-ink)]"
                   />
                 </div>
                 <div>
@@ -268,7 +268,7 @@ export default function ProductDetailPage() {
                     required
                     value={formData.phone}
                     onChange={e => setFormData({ ...formData, phone: e.target.value })}
-                    className="w-full bg-white border border-[#1E352F]/15 px-4 py-2.5 text-[0.9rem] focus:outline-none focus:border-[#C5A880]"
+                    className="w-full bg-white border border-neutral-900/15 px-4 py-2.5 text-[0.9rem] focus:outline-none focus:border-[var(--color-primary-ink)]"
                   />
                 </div>
                 <div>
@@ -278,7 +278,7 @@ export default function ProductDetailPage() {
                     required
                     value={formData.date}
                     onChange={e => setFormData({ ...formData, date: e.target.value })}
-                    className="w-full bg-white border border-[#1E352F]/15 px-4 py-2.5 text-[0.9rem] focus:outline-none focus:border-[#C5A880]"
+                    className="w-full bg-white border border-neutral-900/15 px-4 py-2.5 text-[0.9rem] focus:outline-none focus:border-[var(--color-primary-ink)]"
                   />
                 </div>
 
@@ -286,13 +286,13 @@ export default function ProductDetailPage() {
                   <button
                     type="button"
                     onClick={() => setBookingModal(false)}
-                    className="flex-1 border border-[#1E352F]/20 py-3 text-[0.8rem] uppercase tracking-[0.15em] font-bold hover:bg-[#1E352F]/5 transition-colors"
+                    className="flex-1 border border-neutral-900/20 py-3 text-[0.8rem] uppercase tracking-[0.15em] font-bold hover:bg-neutral-900/5 transition-colors"
                   >
                     Cancel
                   </button>
                   <button
                     type="submit"
-                    className="flex-1 bg-[#1E352F] text-white py-3 text-[0.8rem] uppercase tracking-[0.15em] font-bold hover:opacity-90 transition-opacity"
+                    className="flex-1 bg-[var(--color-primary)] text-[var(--color-on-primary)] py-3 text-[0.8rem] uppercase tracking-[0.15em] font-bold hover:bg-[var(--color-primary-hover)] transition-colors"
                   >
                     Confirm Booking
                   </button>

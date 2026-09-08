@@ -50,9 +50,9 @@ export function TemplateWrapper({ theme, children }: { theme: TemplateTheme; chi
   return (
     <div style={cssVariables} className="min-h-screen bg-[var(--theme-primary)] text-[var(--theme-secondary)]">
       <motion.div
-        initial={prefersReducedMotion ? {} : {opacity:0}}
-        animate={prefersReducedMotion ? {} : {opacity:1}}
-        transition={{duration:1.2, ease:"easeInOut"}}
+        initial={prefersReducedMotion ? false : { opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={prefersReducedMotion ? { duration: 0 } : { duration: 1.2, ease: "easeInOut" }}
       >
         {children}
       </motion.div>

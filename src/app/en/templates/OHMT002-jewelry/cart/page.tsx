@@ -25,7 +25,7 @@ function JewelryCartPageContent() {
 
     <TemplateWrapper theme={theme}>
 
-      <main className="antialiased bg-[var(--color-bg)] selection:bg-[var(--color-primary)] selection:text-white font-sans text-neutral-900 min-h-screen">
+      <main className="antialiased bg-[var(--color-bg)] selection:bg-[var(--color-primary)] selection:text-[var(--color-on-primary)] font-sans text-neutral-900 min-h-screen">
       {/* Header */}
       <header className="fixed top-0 w-full z-50 border-b border-neutral-100 bg-white">
         <div className="max-w-[1440px] mx-auto px-6 md:px-12 h-20 flex items-center justify-between">
@@ -59,8 +59,8 @@ function JewelryCartPageContent() {
                       <span className="text-lg font-serif">{item.price}</span>
                     </div>
                     <div className="flex justify-between items-end">
-                      <div className="flex items-center gap-8 text-xs uppercase font-bold tracking-widest text-[var(--color-primary)]">
-                        <button className="border-b border-[var(--color-primary)]">Remove</button>
+                      <div className="flex items-center gap-8 text-xs uppercase font-bold tracking-widest text-[var(--color-primary-ink)]">
+                        <button className="border-b border-[var(--color-primary-ink)]">Remove</button>
                         <button className="border-b border-transparent hover:border-neutral-900 text-neutral-300 hover:text-neutral-900">Move to Wishlist</button>
                       </div>
                       <div className="flex items-center gap-4 text-xs">
@@ -99,7 +99,7 @@ function JewelryCartPageContent() {
                 Begin Checkout
               </Button>
               <div className="text-center">
-                 <p className="text-sm text-neutral-500">"Complimentary shipping and signature packaging on all orders."</p>
+                 <p className="text-sm text-neutral-500">“Complimentary shipping and signature packaging on all orders.”</p>
               </div>
             </div>
           </div>

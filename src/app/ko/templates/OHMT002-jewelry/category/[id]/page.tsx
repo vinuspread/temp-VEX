@@ -84,7 +84,7 @@ function CategoryContent() {
         </section>
 
         {categoryId === "about" ? (
-          /* About Page Content — split into multiple full-width sections for alternating backgrounds */
+          /* About Page Content - split into multiple full-width sections for alternating backgrounds */
           <>
             {/* Story Grid Section */}
             <section className="py-20 md:py-28 px-6 md:px-12 bg-white">

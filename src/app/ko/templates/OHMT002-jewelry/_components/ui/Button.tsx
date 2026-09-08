@@ -37,9 +37,11 @@ const Button = React.forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonPro
     );
 
     if (href) {
-      const { type, ...anchorProps } = rest as any;
+      const { type: buttonType, ...anchorProps } = rest;
+      void buttonType;
+      const linkProps = anchorProps as unknown as React.AnchorHTMLAttributes<HTMLAnchorElement>;
       return (
-        <Link href={href} ref={ref as React.Ref<HTMLAnchorElement>} className={baseClasses} {...anchorProps}>
+        <Link href={href} ref={ref as React.Ref<HTMLAnchorElement>} className={baseClasses} {...linkProps}>
           {children}
         </Link>
       );

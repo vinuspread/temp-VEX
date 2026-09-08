@@ -73,8 +73,8 @@ const [scrolled, setScrolled] = useState(false);
   const isTransparent = isHome && !scrolled;
 
   // Derive current category ID if on subpage
-  const currentCategory = pathname.includes("/templates/OHMT002-jewelry/category/")
-    ? pathname.split("/templates/OHMT002-jewelry/category/")[1]
+  const currentCategory = isCategoryPage
+    ? pathname.split("/category/")[1]
     : "";
 
   const menuItems = [
@@ -87,9 +87,9 @@ const [scrolled, setScrolled] = useState(false);
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 h-14 md:h-20 transition-all duration-300 flex items-center ${
+        className={`fixed top-0 left-0 right-0 z-50 h-14 md:h-20 transition-all duration-700 flex items-center ${
           !isTransparent
-            ? "bg-white/95 backdrop-blur-xl border-b border-neutral-100/50"
+            ? "bg-[var(--color-bg-secondary)]/95 backdrop-blur-xl border-b border-neutral-100/50"
             : "bg-transparent"
         }`}
       >
@@ -105,9 +105,11 @@ const [scrolled, setScrolled] = useState(false);
                   href={item.href}
                   className={`relative py-1 transition-colors duration-300 ${
                     isActive
-                      ? "text-[var(--color-primary)]"
+                      ? !isTransparent
+                        ? "text-[var(--color-primary-ink)]"
+                        : "text-[var(--color-primary)]"
                       : !isTransparent
-                      ? "text-neutral-500 hover:text-[var(--color-primary)]"
+                      ? "text-neutral-500 hover:text-[var(--color-primary-ink)]"
                       : "text-white/80 hover:text-[var(--color-primary)]"
                   } group`}
                 >
@@ -126,6 +128,7 @@ const [scrolled, setScrolled] = useState(false);
           {/* Mobile Menu Toggle */}
           <button
             onClick={() => setMobileMenuOpen(true)}
+            aria-label="Open menu"
             className={`lg:hidden p-2 transition-colors ${
               !isTransparent ? "text-neutral-900" : "text-white"
             } hover:text-[var(--color-primary)]`}
@@ -134,10 +137,10 @@ const [scrolled, setScrolled] = useState(false);
           </button>
 
           {/* Center Logo */}
-          <div className="absolute left-1/2 -translate-x-1/2 flex items-center justify-center pointer-events-none">
+          <div className="absolute left-1/2 -translate-x-1/2 flex items-center justify-center pointer-events-none max-w-[120px] sm:max-w-none">
             <Link
               href={`/en/templates/OHMT002-jewelry`}
-              className={`text-sm sm:text-lg md:text-2xl font-serif tracking-[0.25em] -mr-[0.25em] font-normal uppercase transition-colors duration-300 pointer-events-auto text-center ${
+              className={`text-sm sm:text-lg md:text-2xl font-serif tracking-[0.25em] -mr-[0.25em] font-normal uppercase transition-colors duration-700 pointer-events-auto text-center ${
                 !isTransparent ? "text-neutral-900" : "text-white"
               }`}
             >
@@ -147,7 +150,7 @@ const [scrolled, setScrolled] = useState(false);
 
           {/* Right Icons & About */}
           <div
-            className={`flex items-center gap-4 sm:gap-6 md:gap-8 transition-colors duration-300 ${
+            className={`flex items-center gap-4 sm:gap-6 md:gap-8 transition-colors duration-700 ${
               !isTransparent ? "text-neutral-700" : "text-white"
             }`}
           >
@@ -161,9 +164,11 @@ const [scrolled, setScrolled] = useState(false);
                     href={item.href}
                     className={`relative py-1 transition-colors duration-300 ${
                       isActive
-                        ? "text-[var(--color-primary)]"
+                        ? !isTransparent
+                          ? "text-[var(--color-primary-ink)]"
+                          : "text-[var(--color-primary)]"
                         : !isTransparent
-                        ? "text-neutral-500 hover:text-[var(--color-primary)]"
+                        ? "text-neutral-500 hover:text-[var(--color-primary-ink)]"
                         : "text-white/80 hover:text-[var(--color-primary)]"
                     } group`}
                   >
@@ -178,16 +183,18 @@ const [scrolled, setScrolled] = useState(false);
               })}
             </div>
 
-            <button className="hover:text-[var(--color-primary)] transition-colors hidden sm:block">
+            <span className={`hidden lg:inline-block w-px h-3 ${!isTransparent ? "bg-neutral-200/50" : "bg-white/20"}`} />
+
+            <button aria-label="Search" className="hover:text-[var(--color-primary)] transition-colors hidden sm:block">
               <Search size={18} strokeWidth={1.5} />
             </button>
-            <button className="hover:text-[var(--color-primary)] transition-colors hidden md:block">
+            <button aria-label="Wishlist" className="hover:text-[var(--color-primary)] transition-colors hidden md:block">
               <Heart size={18} strokeWidth={1.5} />
             </button>
-            <button className="hover:text-[var(--color-primary)] transition-colors hidden sm:block">
+            <button aria-label="Account" className="hover:text-[var(--color-primary)] transition-colors hidden sm:block">
               <User size={18} strokeWidth={1.5} />
             </button>
-            <Link href={`/en/templates/OHMT002-jewelry/cart`} className="group flex items-center gap-2 hover:opacity-85 transition-opacity">
+            <Link href={`/en/templates/OHMT002-jewelry/cart`} aria-label="Shopping bag" className="group flex items-center gap-2 hover:opacity-85 transition-opacity">
               <ShoppingBag size={18} strokeWidth={1.5} className="group-hover:text-[var(--color-primary)] transition-colors" />
             </Link>
           </div>
@@ -213,12 +220,12 @@ const [scrolled, setScrolled] = useState(false);
               animate={{ x: 0 }}
               exit={{ x: "-100%" }}
               transition={{ type: "spring", bounce: 0.1, duration: 0.6 }}
-              className="fixed top-0 left-0 bottom-0 w-[80%] max-w-[320px] bg-white z-[101] p-10 flex flex-col justify-between shadow-2xl selection:bg-[var(--color-primary)]"
+              className="fixed top-0 left-0 bottom-0 w-[80%] max-w-[320px] bg-[var(--color-bg-secondary)] z-[101] p-10 flex flex-col justify-between selection:bg-[var(--color-primary)] selection:text-[var(--color-on-primary)]"
             >
               <div className="space-y-16">
                 <div className="flex justify-between items-center">
                   <span className="text-sm font-serif tracking-[0.2em] uppercase text-neutral-900">AVELINE</span>
-                  <button onClick={() => setMobileMenuOpen(false)} className="p-2 text-neutral-500 hover:text-neutral-900">
+                  <button onClick={() => setMobileMenuOpen(false)} aria-label="Close menu" className="p-2 text-neutral-500 hover:text-neutral-900">
                     <X size={20} />
                   </button>
                 </div>
@@ -232,7 +239,7 @@ const [scrolled, setScrolled] = useState(false);
                         href={item.href}
                         onClick={() => setMobileMenuOpen(false)}
                         className={`transition-colors py-2 border-b border-neutral-100 flex justify-between items-center ${
-                          isActive ? "text-[var(--color-primary)]" : "hover:text-[var(--color-primary)]"
+                          isActive ? "text-[var(--color-primary-ink)]" : "hover:text-[var(--color-primary-ink)]"
                         }`}
                       >
                         {item.name}

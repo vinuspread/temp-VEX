@@ -59,7 +59,7 @@ function CategoryContent() {
 
   return (
     <TemplateWrapper theme={theme}>
-      <main className="min-h-screen bg-[var(--color-bg)] selection:bg-[var(--color-primary)] selection:text-white font-sans text-neutral-900">
+      <main className="min-h-screen bg-[var(--color-bg)] selection:bg-[var(--color-primary)] selection:text-[var(--color-on-primary)] font-sans text-neutral-900">
         <Navbar />
 
         {/* Category Header - h-[40vh] */}
@@ -84,7 +84,7 @@ function CategoryContent() {
         </section>
 
         {categoryId === "about" ? (
-          /* About Page Content — split into multiple full-width sections for alternating backgrounds */
+          /* About Page Content - split into multiple full-width sections for alternating backgrounds */
           <>
             {/* Story Grid Section */}
             <section className="py-20 md:py-28 px-6 md:px-12 bg-white">
@@ -97,7 +97,7 @@ function CategoryContent() {
                     <span className="text-xs uppercase tracking-[0.3em] text-neutral-500 font-bold">Artisan Technique</span>
                     <h2 className="text-3xl md:text-5xl font-serif font-bold text-neutral-900 leading-[var(--leading-heading)]">Hand-Finished with Passion</h2>
                     <p className="text-sm text-neutral-600 leading-relaxed">
-                      Founded with a dedication to preserving the pristine elegance of gemstones, AVELINE Fine Jewelry is a bridge between nature's raw beauty and exceptional design. Every single facet is hand-set and hand-polished by our master artisans who spend hundreds of hours to bring out the fire in each stone.
+                      Founded with a dedication to preserving the pristine elegance of gemstones, AVELINE Fine Jewelry is a bridge between nature&apos;s raw beauty and exceptional design. Every single facet is hand-set and hand-polished by our master artisans who spend hundreds of hours to bring out the fire in each stone.
                     </p>
                     <p className="text-sm text-neutral-600 leading-relaxed">
                       We seek permanence. In a world of fast-moving trends, our jewelry is designed to be passed down through generations, holding memories and whispered promises of forever.
@@ -116,21 +116,21 @@ function CategoryContent() {
                 </div>
                 <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
                   <div className="bg-white p-8 md:p-10 border border-neutral-200/50 shadow-[0_4px_20px_rgba(0,0,0,0.01)] space-y-4 text-center">
-                    <div className="w-12 h-12 rounded-full bg-[var(--color-primary)] flex items-center justify-center mx-auto text-lg font-serif text-white font-bold">I</div>
+                    <div className="w-12 h-12 rounded-full bg-[var(--color-primary)] flex items-center justify-center mx-auto text-lg font-serif text-[var(--color-on-primary)] font-bold">I</div>
                     <h4 className="text-lg font-serif font-bold text-neutral-800">Ethical Sourcing</h4>
                     <p className="text-sm text-neutral-500 leading-relaxed max-w-xs mx-auto">
                       We trace every gemstone from its origin to ensure conflict-free, responsible, and ethical mining practices.
                     </p>
                   </div>
                   <div className="bg-white p-8 md:p-10 border border-neutral-200/50 shadow-[0_4px_20px_rgba(0,0,0,0.01)] space-y-4 text-center">
-                    <div className="w-12 h-12 rounded-full bg-[var(--color-primary)] flex items-center justify-center mx-auto text-lg font-serif text-white font-bold">II</div>
+                    <div className="w-12 h-12 rounded-full bg-[var(--color-primary)] flex items-center justify-center mx-auto text-lg font-serif text-[var(--color-on-primary)] font-bold">II</div>
                     <h4 className="text-lg font-serif font-bold text-neutral-800">Masterful Cut</h4>
                     <p className="text-sm text-neutral-500 leading-relaxed max-w-xs mx-auto">
                       Our master lapidaries cut and polish each gem to maximize its refractive index, creating signature brilliance.
                     </p>
                   </div>
                   <div className="bg-white p-8 md:p-10 border border-neutral-200/50 shadow-[0_4px_20px_rgba(0,0,0,0.01)] space-y-4 text-center">
-                    <div className="w-12 h-12 rounded-full bg-[var(--color-primary)] flex items-center justify-center mx-auto text-lg font-serif text-white font-bold">III</div>
+                    <div className="w-12 h-12 rounded-full bg-[var(--color-primary)] flex items-center justify-center mx-auto text-lg font-serif text-[var(--color-on-primary)] font-bold">III</div>
                     <h4 className="text-lg font-serif font-bold text-neutral-800">Timeless Heirloom</h4>
                     <p className="text-sm text-neutral-500 leading-relaxed max-w-xs mx-auto">
                       Designed with balance and weight that stands the test of time, built to be passed down through generations.
@@ -154,7 +154,7 @@ function CategoryContent() {
                     <div className="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-[var(--color-primary)] border-4 border-white -translate-x-[7px] md:-translate-x-2 z-10" />
                     <div className="w-full md:w-[47%] pl-10 md:pl-0 md:pr-10 md:text-right">
                       <div className="bg-white p-6 md:p-8 border border-neutral-100 shadow-[0_4px_20px_rgba(0,0,0,0.01)] transition-transform hover:-translate-y-1 inline-block text-left w-full">
-                        <span className="text-xl md:text-2xl font-serif font-bold text-[var(--color-primary)]">1924</span>
+                        <span className="text-xl md:text-2xl font-serif font-bold text-[var(--color-primary-ink)]">1924</span>
                         <h4 className="text-base md:text-base font-serif font-bold text-neutral-800 mt-1">The First Atelier</h4>
                         <p className="text-sm text-neutral-500 mt-2 leading-relaxed">
                           Our founder opened the first small boutique in Paris, dedicating his life to creating high-jewelry using raw, uncut diamonds.
@@ -170,7 +170,7 @@ function CategoryContent() {
                     <div className="hidden md:block w-[47%]" />
                     <div className="w-full md:w-[47%] pl-10 md:pl-10">
                       <div className="bg-white p-6 md:p-8 border border-neutral-100 shadow-[0_4px_20px_rgba(0,0,0,0.01)] transition-transform hover:-translate-y-1 inline-block w-full">
-                        <span className="text-xl md:text-2xl font-serif font-bold text-[var(--color-primary)]">1968</span>
+                        <span className="text-xl md:text-2xl font-serif font-bold text-[var(--color-primary-ink)]">1968</span>
                         <h4 className="text-base md:text-base font-serif font-bold text-neutral-800 mt-1">Royal Appointment</h4>
                         <p className="text-sm text-neutral-500 mt-2 leading-relaxed">
                           The House of AVELINE received the prestigious appointment of supplying unique custom gems to royal families across Europe.
@@ -184,7 +184,7 @@ function CategoryContent() {
                     <div className="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-[var(--color-primary)] border-4 border-white -translate-x-[7px] md:-translate-x-2 z-10" />
                     <div className="w-full md:w-[47%] pl-10 md:pl-0 md:pr-10 md:text-right">
                       <div className="bg-white p-6 md:p-8 border border-neutral-100 shadow-[0_4px_20px_rgba(0,0,0,0.01)] transition-transform hover:-translate-y-1 inline-block text-left w-full">
-                        <span className="text-xl md:text-2xl font-serif font-bold text-[var(--color-primary)]">2002</span>
+                        <span className="text-xl md:text-2xl font-serif font-bold text-[var(--color-primary-ink)]">2002</span>
                         <h4 className="text-base md:text-base font-serif font-bold text-neutral-800 mt-1">The Global Expansion</h4>
                         <p className="text-sm text-neutral-500 mt-2 leading-relaxed">
                           Opening of our flagship salon in New York and Tokyo, establishing our unique diamond cutting signature worldwide.
@@ -200,7 +200,7 @@ function CategoryContent() {
                     <div className="hidden md:block w-[47%]" />
                     <div className="w-full md:w-[47%] pl-10 md:pl-10">
                       <div className="bg-white p-6 md:p-8 border border-neutral-100 shadow-[0_4px_20px_rgba(0,0,0,0.01)] transition-transform hover:-translate-y-1 inline-block w-full">
-                        <span className="text-xl md:text-2xl font-serif font-bold text-[var(--color-primary)]">2026</span>
+                        <span className="text-xl md:text-2xl font-serif font-bold text-[var(--color-primary-ink)]">2026</span>
                         <h4 className="text-base md:text-base font-serif font-bold text-neutral-800 mt-1">The House Heritage Redefined</h4>
                         <p className="text-sm text-neutral-500 mt-2 leading-relaxed">
                           Launching our ethical eternity campaign, ensuring all gemstones are sourced with net-zero carbon impact and blockchain tracking.
@@ -237,13 +237,13 @@ function CategoryContent() {
                       <img src={item.img} alt={item.name} className="w-full h-full object-cover scale-[1.06] group-hover:scale-[1.12] transition-transform duration-[2.5s] ease-out" />
                       <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-500" />
                       <div className="absolute bottom-0 left-0 right-0 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out z-20">
-                        <button className="w-full py-4 bg-[var(--color-primary)] text-white text-xs font-bold uppercase tracking-[0.15em] hover:bg-neutral-900 transition-colors rounded-none">
+                        <button className="w-full py-4 bg-[var(--color-primary)] text-[var(--color-on-primary)] text-xs font-bold uppercase tracking-[0.15em] hover:bg-neutral-900 hover:text-white transition-colors rounded-none">
                           Request Appointment
                         </button>
                       </div>
                     </div>
                     <div className="space-y-1 text-center">
-                      <h4 className="text-sm md:text-base font-serif font-bold text-neutral-800 group-hover:text-[var(--color-primary)] transition-colors leading-[var(--leading-heading)] truncate">
+                      <h4 className="text-sm md:text-base font-serif font-bold text-neutral-800 group-hover:text-[var(--color-primary-ink)] transition-colors leading-[var(--leading-heading)] truncate">
                         {item.name}
                       </h4>
                       <p className="text-sm text-neutral-500 font-bold">{item.price}</p>

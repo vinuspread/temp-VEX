@@ -6,7 +6,7 @@
   --text-h3: clamp(1.5rem, 3vw, 2rem);
   --text-lead: clamp(1.125rem, 2vw, 1.5rem);
   --leading-display: 0.95;
-  --leading-heading: 1.1;
+  --leading-heading: 1;
   --leading-body: 1.6;
 
   --color-primary: #1E352F;

@@ -21,6 +21,7 @@ function JewelryPageContent() {
   },
   "hero": {
     "badge": `AVELINE Fine Jewelry`,
+    "kicker": `Jewelry to treasure through time`,
     "title1": `The Radiance`,
     "title2": `of Forever`,
     "cta1": `Explore The Edition`,
@@ -84,11 +85,11 @@ const { scrollYProgress } = useScroll({
 
   return (
     <TemplateWrapper theme={theme}>
-      <main ref={containerRef} className="bg-[var(--color-bg)] selection:bg-[var(--color-primary)] selection:text-white font-sans text-neutral-900">
+      <main ref={containerRef} className="bg-[var(--color-bg)] selection:bg-[var(--color-primary)] selection:text-[var(--color-on-primary)] font-sans text-neutral-900">
         <Navbar />
 
         {/* Hero */}
-        <section className="relative h-screen flex items-center justify-center overflow-hidden">
+        <section className="relative min-h-[100dvh] flex items-center justify-center overflow-hidden">
           <motion.div
             style={{ scale: heroScale, opacity: heroOpacity }}
             className="absolute inset-0 z-0"
@@ -98,7 +99,7 @@ const { scrollYProgress } = useScroll({
               className="w-full h-full object-cover grayscale-[0.2]"
               alt="AVELINE Fine Jewelry Hero"
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/50" />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/10 to-black/40" />
           </motion.div>
 
           <div className="relative z-10 text-center px-6">
@@ -107,19 +108,23 @@ const { scrollYProgress } = useScroll({
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
             >
-              <span className="text-xs uppercase text-white mb-6 block tracking-[0.3em] font-bold opacity-80">
+              <span className="text-xs md:text-sm uppercase text-white mb-6 block tracking-[0em] font-bold opacity-80">
                 {t.hero.badge}
               </span>
-              <h2 className="text-[11vw] md:text-[6vw] font-serif text-white mb-12 leading-[var(--leading-heading)] flex flex-col items-center">
-                <span className="whitespace-nowrap">{t.hero.title1}</span>
-                <span className="whitespace-nowrap font-bold text-white">{t.hero.title2}</span>
+              <h2 className="text-white mb-12 flex flex-col items-center tracking-[0.05em] max-w-6xl mx-auto space-y-4">
+                <span className="block whitespace-nowrap font-extralight text-white/90 text-center text-lg md:text-2xl tracking-tight">
+                  {t.hero.kicker}
+                </span>
+                <span className="block whitespace-nowrap font-serif font-normal text-white text-center text-4xl md:text-7xl leading-[var(--leading-heading)] md:leading-[var(--leading-heading)]">
+                  {t.hero.title1} <br /> {t.hero.title2}
+                </span>
               </h2>
               <div className="flex flex-col md:flex-row items-center justify-center gap-6">
-                <button className="px-10 py-4 bg-white text-neutral-900 text-xs font-bold uppercase tracking-[0.3em] hover:bg-[var(--color-primary)] hover:text-white transition-all">
+                <button className="px-10 py-4 bg-white text-neutral-900 text-xs font-bold uppercase tracking-[0.3em] hover:bg-[var(--color-primary)] hover:text-[var(--color-on-primary)] transition-all">
                   {t.hero.cta1}
                 </button>
                 <button className="group flex items-center gap-4 text-white hover:text-[var(--color-primary)] transition-all text-xs uppercase tracking-[0.3em] font-bold">
-                  {t.hero.cta2} <div className="w-10 h-px bg-white group-hover:bg-[var(--color-primary)] group-hover:w-16 transition-all duration-300" />
+                  {t.hero.cta2} <div className="w-10 h-px bg-white group-hover:bg-[var(--color-primary)] group-hover:w-16 transition-all duration-700" />
                 </button>
               </div>
             </motion.div>
@@ -129,11 +134,11 @@ const { scrollYProgress } = useScroll({
         {/* Products */}
         <section className="py-10 md:py-20 md:py-32 px-6 md:px-12 bg-white">
           <div className="max-w-[1440px] mx-auto">
-            <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-12 md:mb-16 gap-8">
-                <div>
-                  <h3 className="text-3xl md:text-5xl font-serif font-bold tracking-tight">{t.products.title}</h3>
+            <div className="flex flex-col md:flex-row md:items-center justify-between mb-12 md:mb-16 gap-6 md:gap-8">
+                <div className="shrink-0">
+                  <h3 className="text-2xl md:text-3xl lg:text-5xl font-serif font-bold tracking-[-0.02em] md:tracking-[-0.04em] whitespace-nowrap">{t.products.title}</h3>
                 </div>
-              <div className="flex items-center gap-6 md:gap-10 overflow-x-auto pb-1 w-full max-w-full no-scrollbar shrink-0" style={{ scrollbarWidth: "none" }}>
+              <div className="flex items-center gap-6 md:gap-10 overflow-x-auto pb-1 min-w-0 max-w-full no-scrollbar md:shrink" style={{ scrollbarWidth: "none" }}>
                 {[
                   { id: "All", label: t.products.tabs.all },
                   { id: "Rings", label: t.products.tabs.rings },
@@ -179,17 +184,17 @@ const { scrollYProgress } = useScroll({
                      <div className="absolute top-4 left-4">
                        <span className="flex items-center justify-center h-7 text-xs bg-white/95 text-neutral-800 border border-neutral-200/50 rounded-none px-3.5 uppercase font-bold tracking-[0.15em] backdrop-blur-sm shadow-[0_2px_8px_rgba(0,0,0,0.03)]">{item.tag}</span>
                      </div>
-                    <div className="absolute bottom-4 left-1/2 -translate-x-1/2 w-[90%] z-20 opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300 hidden sm:block">
-                      <span className="block w-full py-3 bg-[var(--color-primary)] text-center text-xs font-bold uppercase tracking-[0.1em] text-white">
+                    <div className="absolute bottom-4 left-1/2 -translate-x-1/2 w-[90%] z-20 opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-700 hidden sm:block">
+                      <span className="block w-full py-3 bg-[var(--color-primary)] text-center text-xs font-bold uppercase tracking-[0.1em] text-[var(--color-on-primary)]">
                         {t.products.action}
                       </span>
                     </div>
                   </Link>
                   <div className="space-y-1 text-center">
                     <Link href={`/en/templates/OHMT002-jewelry/product/${item.id}`} className="block">
-                      <h4 className="text-sm md:text-base font-serif font-bold text-neutral-800 group-hover:text-[var(--color-primary)] transition-colors leading-[1.1] truncate">{item.name}</h4>
+                      <h4 className="text-sm md:text-base font-serif font-bold text-neutral-800 group-hover:text-[var(--color-primary-ink)] transition-colors leading-none truncate">{item.name}</h4>
                     </Link>
-                    <p className="text-sm text-[var(--color-primary)] font-medium">{item.price}</p>
+                    <p className="text-sm text-[var(--color-primary-ink)] font-medium">{item.price}</p>
                   </div>
                 </motion.div>
               ))}
@@ -210,10 +215,10 @@ const { scrollYProgress } = useScroll({
               >
                 <img loading="lazy" src="/templates/OHMT002-jewelry/jewelry-craft.png" alt="Jewelry Craftsmanship" className="w-full h-full object-cover" />
               </motion.div>
-              <div className="absolute -bottom-10 -right-6 lg:-bottom-14 lg:-right-14 w-72 bg-white p-8 hidden md:block border border-neutral-100">
-                <span className="text-[var(--color-primary)] text-xs font-bold uppercase tracking-[0.3em] block mb-3">{t.craftsmanship.badge}</span>
+              <div className="absolute -bottom-10 -right-6 lg:-bottom-14 lg:-right-14 w-72 bg-white p-8 hidden md:block shadow-[0_40px_80px_rgba(0,0,0,0.08)] border border-neutral-100">
+                <span className="text-[var(--color-primary-ink)] text-xs font-bold uppercase tracking-[0.3em] block mb-3">{t.craftsmanship.badge}</span>
                 <p className="text-sm text-neutral-800 leading-[var(--leading-body)] font-serif italic">
-                  "{t.craftsmanship.quote}"
+                  “{t.craftsmanship.quote}”
                 </p>
               </div>
             </div>
@@ -225,15 +230,19 @@ const { scrollYProgress } = useScroll({
               className="space-y-8"
             >
               <span className="text-xs uppercase tracking-[0.3em] text-neutral-500 font-bold">{t.craftsmanship.heritage}</span>
-              <h3 className="text-3xl md:text-5xl font-serif font-bold leading-[var(--leading-heading)] tracking-tight">{t.craftsmanship.title1} <span className="text-[var(--color-primary)]">{t.craftsmanship.title2}</span></h3>
+              <h3 className="text-3xl md:text-5xl font-serif font-bold leading-[var(--leading-heading)] tracking-tight">
+                {t.craftsmanship.title1}
+                <br />
+                <span className="text-[var(--color-primary)]">{t.craftsmanship.title2}</span>
+              </h3>
               <p className="text-sm md:text-base text-neutral-600 leading-[var(--leading-body)] max-w-md">
                 {t.craftsmanship.desc}
               </p>
               <div className="flex items-center gap-4 group cursor-pointer pt-2">
-                <div className="w-11 h-11 rounded-none border border-neutral-200 flex items-center justify-center group-hover:bg-[var(--color-primary)] group-hover:border-[var(--color-primary)] group-hover:text-white transition-all duration-300 flex-shrink-0">
+                <div className="w-11 h-11 rounded-full border border-neutral-200 flex items-center justify-center group-hover:bg-[var(--color-primary)] group-hover:border-[var(--color-primary)] group-hover:text-[var(--color-on-primary)] transition-all duration-500 flex-shrink-0">
                   <Play size={12} fill="currentColor" className="translate-x-[1px]" />
                 </div>
-                <span className="text-xs uppercase tracking-[0.3em] font-bold group-hover:translate-x-2 transition-transform duration-300">{t.craftsmanship.process}</span>
+                <span className="text-xs uppercase tracking-[0.3em] font-bold group-hover:translate-x-2 transition-transform duration-500">{t.craftsmanship.process}</span>
               </div>
             </motion.div>
           </div>
