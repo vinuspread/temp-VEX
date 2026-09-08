@@ -12,6 +12,8 @@ try {
     await page.locator('#pricing').screenshot({ path: `output/playwright/renewal/minimal/${lang}-pricing-open-${width}.png` });
     await page.locator('#templates').scrollIntoViewIfNeeded();
     await page.screenshot({ path: `output/playwright/renewal/minimal/${lang}-shadow-${width}.png` });
+    await page.locator('#templates article').first().hover();
+    await page.screenshot({ path: `output/playwright/renewal/minimal/${lang}-thumbnail-hover-${width}.png` });
     console.log(`${lang} ${width}: captured`);
     await page.close();
   }
