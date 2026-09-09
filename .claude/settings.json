@@ -2,7 +2,29 @@
   "permissions": {
     "allow": [
       "Bash(xargs sed -i 's/ font-mono//g')",
-      "WebFetch(domain:www.behance.net)"
+      "WebFetch(domain:www.behance.net)",
+      "Bash(orca orchestration check *)",
+      "Bash(orca terminal wait *)",
+      "Bash(orca orchestration worker-show *)",
+      "Bash(orca status *)",
+      "Bash(orca terminal read *)",
+      "Bash(orca orchestration task-list *)",
+      "Bash(orca orchestration dispatch-show *)",
+      "Bash(orca skills get *)",
+      "mcp__claude_ai_Figma__get_screenshot",
+      "mcp__claude_ai_Figma__get_design_context",
+      "mcp__claude_ai_Figma__get_metadata",
+      "mcp__claude_ai_Figma__get_figma_skill",
+      "mcp__claude-in-chrome__tabs_context_mcp",
+      "mcp__claude-in-chrome__find",
+      "mcp__paseo__get_agent_status",
+      "mcp__paseo__browser_screenshot",
+      "mcp__paseo__browser_wait",
+      "mcp__paseo__browser_snapshot",
+      "mcp__paseo__get_agent_activity",
+      "mcp__paseo__list_agents",
+      "mcp__paseo__list_models",
+      "mcp__paseo__list_pending_permissions"
     ]
   }
 }
